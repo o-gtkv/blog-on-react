@@ -1,0 +1,380 @@
+@import url(grid.css);
+
+:root {    
+    --text-opacity: 0.55;
+    --accent-color: #84b663;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1900px;
+    font-family: Cardo, serif;
+    background-color: #f1f1f5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+strong {
+    font-weight: bold;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+p {
+    margin: 30px 0;
+}
+
+.text {
+    opacity: var(--text-opacity);
+    line-height: 25px;
+}
+
+.header {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 3px 5px 5px rgb(0 0 0 / 10%);
+    z-index: 100;
+}
+
+.header .row {    
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu__item {    
+    padding: 10px;
+}
+
+.menu__item a {
+    color: black;
+}
+
+.menu__item a:hover {
+    color: var(--accent-color);
+}
+
+.slider-1 {
+    background-image: url(../img/home_diet_sectionbg1.jpg);    
+}
+
+.slider-2 {
+    background-image: url(../img/home_diet_sectionbg2.jpg);
+}
+
+.slide-img {
+    text-align: center;
+}
+
+.popular-recipes {
+    margin-top: -120px;
+    margin-bottom: 100px;
+}
+
+.articles {
+    margin-top: -50px;
+    margin-bottom: 100px;
+}
+
+.popular-recipes__header {
+    font-family: Eczar, sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 32px;    
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.popular-recipes__header span {
+    display: inline-block;
+    padding: 0 10px 10px;    
+    border-bottom: 2px solid var(--accent-color);
+}
+
+
+.recipes-card__picture {
+    font-size: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.recipes-card__picture:hover > .recipes-card__actions {
+    bottom: 0;
+}
+
+.recipes-card__opt {    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.recipes-card__actions {    
+    display: flex;
+    column-gap: 1px;   
+    text-align: center;
+    position: absolute;      
+    width: 100%;
+    bottom: -77px;
+    transition: 0.3s ease-in-out;
+}
+
+.recipes-card__action-button {
+    flex-grow: 1;
+    border: none;
+    padding: 30px;
+    color: white;
+    background-color: rgb(133, 182, 101, 0.75);     
+    font-size: 1rem;        
+}
+
+.recipes-card__info {
+    padding: 15px 15px;
+    background-color: white; 
+}
+
+.recipes-card__desc-header {
+    font-family: Eczar, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    padding-top: 20px;
+}
+
+.read-more-link {
+    padding: 10px 10px;
+    border-left: 1px solid silver;
+}
+
+.read-more-link a {
+    color: var(--accent-color)
+}
+
+.like-count__icon {
+    cursor: pointer;
+    color: var(--accent-color);
+}
+
+.about-us-list__link {   
+    opacity: var(--text-opacity); 
+    color: black;
+}
+
+.about-us-list__item {
+    padding: 10px 0
+}
+
+.about-us-list__item::before {
+    content: "▸";
+    padding-right: 10px;
+    opacity: var(--text-opacity);
+}
+
+.socials {
+    display: flex;
+    column-gap: 30px;
+    font-size: 1.5rem;
+    opacity: var(--text-opacity);
+}
+
+.footer {
+    background-color: white;
+}
+
+.footer-section-1 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer-section-2 {    
+    padding: 50px 0;
+    text-align: center;
+    border-top: 1px solid silver;
+}
+
+.footer .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.all-recipes {    
+    text-align: center;
+    background-color: var(--accent-color);
+}
+
+.all-recipes__link {
+    font-family: Eczar, sans-serif;
+    display: inline-block;
+    font-size: 24px;
+    color: white;
+    border-bottom: 2px solid black;
+    padding: 0 15px 10px;
+    margin: 30px 0;
+}
+
+.all-recipes__link:hover {
+    color: white;
+    text-decoration: none;   
+}
+
+.article-card {    
+    text-align: center;
+    box-shadow: 0 3px 5px 5px rgb(0 0 0 / 10%);
+}
+
+.article-card__info {
+    padding: 20px 50px;
+    background-color: white;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    color: white;
+    background-color: var(--accent-color);    
+    filter: brightness(1);    
+}
+
+.btn:hover {
+    color: white;    
+    filter: brightness(0.95);
+    text-decoration: none;    
+}
+
+.article-card__desc-header {
+    font-family: Eczar, sans-serif;
+    font-weight: bold;
+    font-size: 24px;    
+}
+
+.article-card__line {
+    display: inline-block;
+    margin-top: 30px;    
+    width: 20%;
+    border-bottom: 5px solid var(--accent-color);
+}
+
+.about-us {
+    background-image: url(../img/home_diet_sectionbg3.jpg);
+}
+
+.swiper-container {
+    margin-top: 300px;
+}
+
+.slider {    
+    text-align: center;
+    height: 800px;
+    max-height: 800px;        
+    background-position: center;
+    background-attachment: fixed;        
+}
+
+.about-us {    
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;    
+    height: 800px;
+    max-height: 800px;        
+    text-align: center;
+    background-position: center;
+    background-attachment: fixed;    
+}
+
+.slide-text,
+.about-us__text {
+    font-size: 60px;
+    font-family: Eczar, sans-serif;
+    color: white;
+    line-height: 5rem;
+}
+
+.about-us__title {
+    font-weight: bold;
+    font-size: 24px;
+    font-family: Eczar, sans-serif;   
+    color: var(--accent-color);
+}
+
+.popular-recipes .recipes-card {
+    margin-bottom: 30px;
+}
+
+.recipes-card__action-button {
+    transition: 0.2s ease-in-out;    
+}
+
+.recipes-card__action-button:hover {
+    background-color: white;
+}
+
+.recipes-card__action-button:hover > i {
+    color: var(--accent-color);
+}
+
+.articles .article-card {
+    margin-bottom: 30px;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .slide-text,
+    .about-us__text {
+        font-size: 30px;
+        line-height: 2.5rem;
+    }
+}
+
+@media (max-width: 815px) {
+    .mobile-menu {
+        display: flex;
+        justify-content: flex-end;
+        cursor: pointer;
+        font-size: 30px;        
+    }    
+
+    .menu-bar {
+        display: none;
+        position: absolute;
+        background-color: rgb(0 0 0 / 75%);
+        height: 100vh;
+        width: 300px;
+        top: 50px;
+        right: 0;
+    }
+
+    .visible-elem {
+        display: flex;
+    }
+
+    .menu {
+        padding: 20px 20px;
+        flex-direction: column;
+    }
+
+    .menu__item-link {
+        color: white;
+    }
+}
