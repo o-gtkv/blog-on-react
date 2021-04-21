@@ -3,7 +3,7 @@
 :root {    
     --text-opacity: 0.55;
     --accent-color: #84b663;
-    font-size: 16px;
+    --font-size: 16px;
 }
 
 * {
@@ -45,118 +45,13 @@ p {
     line-height: 25px;
 }
 
-.header {
-    background-color: white;
-    position: sticky;
-    top: 0;
-    box-shadow: 0 3px 5px 5px rgb(0 0 0 / 10%);
-    z-index: 100;
-}
-
-.header .row {    
-    align-items: center;
-}
-
-.menu {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.menu__item {    
-    padding: 10px;
-}
-
-.menu__item a {
-    color: black;
-}
-
-.menu__item a:hover {
-    color: var(--accent-color);
-}
-
-.slider-1 {
-    background-image: url(../img/home_diet_sectionbg1.jpg);    
-}
-
-.slider-2 {
-    background-image: url(../img/home_diet_sectionbg2.jpg);
-}
-
 .slide-img {
     text-align: center;
-}
-
-.popular-recipes {
-    margin-top: -120px;
-    margin-bottom: 100px;
 }
 
 .articles {
     margin-top: -50px;
     margin-bottom: 100px;
-}
-
-.popular-recipes__header {
-    font-family: Eczar, sans-serif;
-    color: white;
-    text-align: center;
-    font-size: 32px;    
-    font-weight: bold;
-    margin-bottom: 30px;
-}
-
-.popular-recipes__header span {
-    display: inline-block;
-    padding: 0 10px 10px;    
-    border-bottom: 2px solid var(--accent-color);
-}
-
-
-.recipes-card__picture {
-    font-size: 0;
-    position: relative;
-    overflow: hidden;
-}
-
-.recipes-card__picture:hover > .recipes-card__actions {
-    bottom: 0;
-}
-
-.recipes-card__opt {    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;    
-}
-
-.recipes-card__actions {    
-    display: flex;
-    column-gap: 1px;   
-    text-align: center;
-    position: absolute;      
-    width: 100%;
-    bottom: -77px;
-    transition: 0.3s ease-in-out;
-}
-
-.recipes-card__action-button {
-    flex-grow: 1;
-    border: none;
-    padding: 30px;
-    color: white;
-    background-color: rgb(133, 182, 101, 0.75);     
-    font-size: 1rem;        
-}
-
-.recipes-card__info {
-    padding: 15px 15px;
-    background-color: white; 
-}
-
-.recipes-card__desc-header {
-    font-family: Eczar, sans-serif;
-    font-weight: bold;
-    font-size: 24px;
-    padding-top: 20px;
 }
 
 .read-more-link {
@@ -273,20 +168,13 @@ p {
 }
 
 .about-us {
-    background-image: url(../img/home_diet_sectionbg3.jpg);
+    background-image: url(/img/home_diet_sectionbg3.jpg);
 }
 
 .swiper-container {
     margin-top: 300px;
 }
 
-.slider {    
-    text-align: center;
-    height: 800px;
-    max-height: 800px;        
-    background-position: center;
-    background-attachment: fixed;        
-}
 
 .about-us {    
     display: flex;    
@@ -335,46 +223,11 @@ p {
     margin-bottom: 30px;
 }
 
-.mobile-menu {
-    display: none;
-}
 
 @media (max-width: 600px) {
     .slide-text,
     .about-us__text {
         font-size: 30px;
         line-height: 2.5rem;
-    }
-}
-
-@media (max-width: 815px) {
-    .mobile-menu {
-        display: flex;
-        justify-content: flex-end;
-        cursor: pointer;
-        font-size: 30px;        
-    }    
-
-    .menu-bar {
-        display: none;
-        position: absolute;
-        background-color: rgb(0 0 0 / 75%);
-        height: 100vh;
-        width: 300px;
-        top: 50px;
-        right: 0;
-    }
-
-    .visible-elem {
-        display: flex;
-    }
-
-    .menu {
-        padding: 20px 20px;
-        flex-direction: column;
-    }
-
-    .menu__item-link {
-        color: white;
     }
 }

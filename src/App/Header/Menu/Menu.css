@@ -1,0 +1,52 @@
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu__item {    
+    padding: 10px;
+}
+
+.menu__item a {
+    color: black;
+}
+
+.menu__item a:hover {
+    color: var(--accent-color);
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media (max-width: 815px) {
+    .mobile-menu {
+        display: flex;
+        justify-content: flex-end;
+        cursor: pointer;
+        font-size: 30px;        
+    }    
+
+    .menu-bar {
+        display: none;
+        position: absolute;
+        background-color: rgb(0 0 0 / 75%);
+        height: 100vh;
+        width: 300px;
+        top: 50px;
+        right: 0;
+    }
+
+    .visible-elem {
+        display: flex;
+    }
+
+    .menu {
+        padding: 20px 20px;
+        flex-direction: column;
+    }
+
+    .menu__item-link {
+        color: white;
+    }
+}

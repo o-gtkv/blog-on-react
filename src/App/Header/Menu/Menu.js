@@ -1,6 +1,7 @@
-import React, { Fragment } from 'react';
+import React, { Fragment } from 'react'
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-
+import './Menu.css'
 
 const Menu = () => {
     return (
@@ -8,30 +9,31 @@ const Menu = () => {
             <div className="menu-bar">
                 <ul className="menu">
                     <li className="menu__item">
-                        <a class="menu__item-link" href="/">Home</a>
+                        <a className="menu__item-link" href="/">Home</a>
                     </li>
                     <li className="menu__item">
-                        <a class="menu__item-link" href="/">About us</a>
+                        <a className="menu__item-link" href="/">About us</a>
                     </li>
                     <li className="menu__item">
-                        <a class="menu__item-link" href="/">Diets</a>
+                        <a className="menu__item-link" href="/">Diets</a>
                     </li>
                     <li className="menu__item">
-                        <a class="menu__item-link" href="/">Breakfast</a>
+                        <a className="menu__item-link" href="/">Breakfast</a>
                     </li>
                     <li className="menu__item">
-                        <a class="menu__item-link" href="/">Lunch</a>
+                        <a className="menu__item-link" href="/">Lunch</a>
                     </li>
                     <li className="menu__item">
-                        <a class="menu__item-link" href="/">Dinner</a>
+                        <a className="menu__item-link" href="/">Dinner</a>
                     </li>
                     <li className="menu__item">
-                        <a class="menu__item-link" href="/">Contact</a>
+                        <a className="menu__item-link" href="/">Contact</a>
                     </li>
                 </ul>                        
             </div>
             <div className="mobile-menu">
-                <i className="fa fa-bars"></i>
+                <i className="fa fa-bars">menu-icon</i>
+                {/* <FontAwesomeIcon icon={["fa", "fa-bars"]}/> */}
             </div>
         </Fragment>
     )
