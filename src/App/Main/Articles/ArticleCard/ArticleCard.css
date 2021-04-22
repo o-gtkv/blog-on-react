@@ -1,0 +1,22 @@
+.article-card {    
+    text-align: center;
+    box-shadow: 0 3px 5px 5px rgb(0 0 0 / 10%);
+}
+
+.article-card__info {
+    padding: 20px 50px;
+    background-color: white;
+}
+
+.article-card__desc-header {
+    font-family: Eczar, sans-serif;
+    font-weight: bold;
+    font-size: 24px;    
+}
+
+.article-card__line {
+    display: inline-block;
+    margin-top: 30px;    
+    width: 20%;
+    border-bottom: 5px solid var(--accent-color);
+}

@@ -1,4 +1,4 @@
-@import url(grid.css);
+@import 'grid.css';
 
 :root {    
     --text-opacity: 0.55;
@@ -49,11 +49,6 @@ p {
     text-align: center;
 }
 
-.articles {
-    margin-top: -50px;
-    margin-bottom: 100px;
-}
-
 .read-more-link {
     padding: 10px 10px;
     border-left: 1px solid silver;
@@ -63,10 +58,6 @@ p {
     color: var(--accent-color)
 }
 
-.like-count__icon {
-    cursor: pointer;
-    color: var(--accent-color);
-}
 
 .about-us-list__link {   
     opacity: var(--text-opacity); 
@@ -90,56 +81,6 @@ p {
     opacity: var(--text-opacity);
 }
 
-.footer {
-    background-color: white;
-}
-
-.footer-section-1 {
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-.footer-section-2 {    
-    padding: 50px 0;
-    text-align: center;
-    border-top: 1px solid silver;
-}
-
-.footer .title {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.all-recipes {    
-    text-align: center;
-    background-color: var(--accent-color);
-}
-
-.all-recipes__link {
-    font-family: Eczar, sans-serif;
-    display: inline-block;
-    font-size: 24px;
-    color: white;
-    border-bottom: 2px solid black;
-    padding: 0 15px 10px;
-    margin: 30px 0;
-}
-
-.all-recipes__link:hover {
-    color: white;
-    text-decoration: none;   
-}
-
-.article-card {    
-    text-align: center;
-    box-shadow: 0 3px 5px 5px rgb(0 0 0 / 10%);
-}
-
-.article-card__info {
-    padding: 20px 50px;
-    background-color: white;
-}
-
 .btn {
     display: inline-block;
     padding: 15px 30px;
@@ -152,19 +93,6 @@ p {
     color: white;    
     filter: brightness(0.95);
     text-decoration: none;    
-}
-
-.article-card__desc-header {
-    font-family: Eczar, sans-serif;
-    font-weight: bold;
-    font-size: 24px;    
-}
-
-.article-card__line {
-    display: inline-block;
-    margin-top: 30px;    
-    width: 20%;
-    border-bottom: 5px solid var(--accent-color);
 }
 
 .about-us {
@@ -218,11 +146,6 @@ p {
 .recipes-card__action-button:hover > i {
     color: var(--accent-color);
 }
-
-.articles .article-card {
-    margin-bottom: 30px;
-}
-
 
 @media (max-width: 600px) {
     .slide-text,

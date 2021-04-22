@@ -1,24 +1,27 @@
-import React from 'react'
-import SwiperCore, { Autoplay } from 'swiper'
+import React, { Children } from 'react'
+import SwiperCore, { Autoplay, Navigation } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
+import 'swiper/swiper-bundle.min.css'
 import './Slider.css'
 
-SwiperCore.use([Autoplay])
+SwiperCore.use([Autoplay, Navigation])
 
-const Slider = () => {
+const Slider = ({backgroundImage, ...props}) => {
     return (
-        <section className="slider-section slider-section--bg-1">
+        <section className="slider-section" style={{backgroundImage: `url(${backgroundImage})`}}>        
             <div className="container">
                 <div className="row">
-                    <div className="col-xs-12">
-                        <Swiper autoplay={{delay: 3000}} loop={true}>
-                            <SwiperSlide>
-                                <div className="slide-text">
-                                    Welcome to the place full of healthy food and ideas to keep you fit
-                                </div>
-                            </SwiperSlide>
-                        </Swiper>
+                    <div className="col-xs-12">                    
+                        <Swiper autoplay={{delay: 3000}} loop={true}>                            
+                            {
+                                Children.map(props.children, child => (
+                                    <SwiperSlide>
+                                        {child}
+                                    </SwiperSlide>
+                                ))                            
+                            }
+                        </Swiper>                        
                     </div>
                 </div>
             </div>

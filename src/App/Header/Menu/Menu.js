@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import './Menu.css'
 
@@ -31,9 +32,8 @@ const Menu = () => {
                     </li>
                 </ul>                        
             </div>
-            <div className="mobile-menu">
-                <i className="fa fa-bars">menu-icon</i>
-                {/* <FontAwesomeIcon icon={["fa", "fa-bars"]}/> */}
+            <div className="mobile-menu">                
+                <FontAwesomeIcon icon={faBars}/>
             </div>
         </Fragment>
     )

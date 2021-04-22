@@ -1,4 +1,7 @@
 import React from 'react'
+import { faLink, faSearch } from '@fortawesome/free-solid-svg-icons'
+import { faHeart } from '@fortawesome/free-regular-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import './RecipesCard.css'
 
@@ -8,11 +11,11 @@ const RecipesCard = () => {
             <div className="recipes-card__picture">
                 <img src="img/home_diet_blog1-960x720.jpg" alt="" />
                 <div className="recipes-card__actions">
-                    <a className="recipes-card__action-button" href="#">
-                        <i className="fa fa-search "></i>
+                    <a className="recipes-card__action-button" href="#">                        
+                        <FontAwesomeIcon icon={faSearch} />
                     </a>
-                    <a className="recipes-card__action-button" href="#">
-                        <i className="fa fa-link "></i>
+                    <a className="recipes-card__action-button" href="#">                        
+                        <FontAwesomeIcon icon={faLink} />
                     </a>
                 </div>
             </div>
@@ -28,7 +31,8 @@ const RecipesCard = () => {
                 </div>
                 <div className="recipes-card__opt">
                     <div className="like-count">
-                        <i className="like-count__icon fa fa-heart-o"></i>
+                        {/* <i className="like-count__icon fa fa-heart-o"></i> */}
+                        <FontAwesomeIcon className="like-count__icon" icon={faHeart} />
                         <span className="like-count__number">0</span>
                     </div>
                     <div className="read-more-link">
