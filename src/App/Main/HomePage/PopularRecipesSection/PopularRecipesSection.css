@@ -15,5 +15,5 @@
 .popular-recipes__header-text {
     display: inline-block;
     padding: 0 10px 10px;    
-    border-bottom: 2px solid var(--accent-color);
+    border-bottom: 2px solid var(--primary-color);
 }

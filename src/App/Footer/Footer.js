@@ -8,9 +8,9 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="container footer-section-1">
-                <div className="row ">
+                <div className="row">
                     <div className="col-xs-12 col-md-4">
-                        <div className="title">About us</div>
+                        <h4>About us</h4>
                         <ul className="about-us-list offset-top offset-bottom">
                             <li className="about-us-list__item">
                                 <a className="about-us-list__link" href="">Aenean sollicitudin</a>
@@ -33,7 +33,7 @@ const Footer = () => {
                         </ul>
                     </div>
                     <div className="col-xs-12 col-md-4">
-                        <div className="title">Mission</div>
+                        <h4>Mission</h4>
                         <p className="text">
                             <strong>Phasellus metus ac turpis egestas. Vestibulum massa nec odio leo</strong>, pretium
                             bibendum mi, nec ultrices posuere tristique commodo.
@@ -46,7 +46,7 @@ const Footer = () => {
                         </p>
                     </div>
                     <div className="col-xs-12 col-md-4">
-                        <div className="title">Contact</div>
+                        <h4>Contact</h4>
                         <p className="text">
                             <strong>BeDiet</strong>- Phasellus orci luctus et lacus lorem, tempus tellus. Integer mattis.
                         </p>                        

@@ -5,11 +5,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import './RecipesCard.css'
 
-const RecipesCard = () => {
+const RecipesCard = ({image, name, description}) => {    
     return (
-        <div className="recipes-card">
+        <div className="recipes-card margin-bottom-md">
             <div className="recipes-card__picture">
-                <img src="img/home_diet_blog1-960x720.jpg" alt="" />
+                <img src={image} alt="" />
                 <div className="recipes-card__actions">
                     <a className="recipes-card__action-button" href="#">                        
                         <FontAwesomeIcon icon={faSearch} />
@@ -21,17 +21,13 @@ const RecipesCard = () => {
             </div>
             <div className="recipes-card__info">
                 <div className="recipes-card__desc">
-                    <div className="recipes-card__desc-header">Phasellus sagittis eget</div>
+                    <div className="recipes-card__desc-header">{name}</div>
                     <p className="text">
-                        Lorem ipsum dolor sit amet dui aliquam odio. Aenean interdum wisi accumsan
-                        mollis
-                        tempus.
-                        In venenatis lorem hendrerit wisi. Morbi id eleifend neque.
+                        {description}
                     </p>
                 </div>
                 <div className="recipes-card__opt">
-                    <div className="like-count">
-                        {/* <i className="like-count__icon fa fa-heart-o"></i> */}
+                    <div className="like-count">                        
                         <FontAwesomeIcon className="like-count__icon" icon={faHeart} />
                         <span className="like-count__number">0</span>
                     </div>

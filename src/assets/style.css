@@ -1,8 +1,10 @@
 @import 'grid.css';
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;700&display=swap');
 
 :root {    
     --text-opacity: 0.55;
-    --accent-color: #84b663;
+    --primary-color: #84b663;
     --font-size: 16px;
 }
 
@@ -13,7 +15,7 @@
 body {
     margin: 0 auto;
     max-width: 1900px;
-    font-family: Cardo, serif;
+    font-family: Eczar, serif;
     background-color: #f1f1f5;
 }
 
@@ -32,7 +34,7 @@ a {
 }
 
 a:hover {
-    color: var(--accent-color);
+    color: var(--primary-color);
     text-decoration: underline;
 }
 
@@ -40,9 +42,49 @@ p {
     margin: 30px 0;
 }
 
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 44px;
+    font-weight: 500;    
+}
+
+h4 {
+    font-size: 23px;
+    font-weight: 500;    
+}
+
+h5 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
 .text {
     opacity: var(--text-opacity);
     line-height: 25px;
+}
+
+.text--align-center {    
+    text-align: center;
+}
+
+.text--color-white {
+    color: white;
+}
+
+.text--color-primary {
+    color: var(--primary-color);
+}
+
+.centered-item-stack {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    align-items: center;    
+    text-align: center;        
 }
 
 .slide-img {
@@ -55,7 +97,7 @@ p {
 }
 
 .read-more-link a {
-    color: var(--accent-color)
+    color: var(--primary-color)
 }
 
 
@@ -81,22 +123,18 @@ p {
     opacity: var(--text-opacity);
 }
 
-.btn {
+.btn-link {
     display: inline-block;
     padding: 15px 30px;
     color: white;
-    background-color: var(--accent-color);    
-    filter: brightness(1);    
+    background-color: var(--primary-color);    
+    filter: brightness(1);
 }
 
-.btn:hover {
+.btn-link:hover {
     color: white;    
     filter: brightness(0.95);
     text-decoration: none;    
-}
-
-.about-us {
-    background-image: url(/img/home_diet_sectionbg3.jpg);
 }
 
 .swiper-container {
@@ -104,35 +142,11 @@ p {
 }
 
 
-.about-us {    
-    display: flex;    
-    flex-direction: column;
-    justify-content: center;    
-    align-items: center;    
-    height: 800px;
-    max-height: 800px;        
-    text-align: center;
-    background-position: center;
-    background-attachment: fixed;    
-}
-
-.slide-text,
-.about-us__text {
+.slide-text {
     font-size: 60px;
     font-family: Eczar, sans-serif;
     color: white;
     line-height: 5rem;
-}
-
-.about-us__title {
-    font-weight: bold;
-    font-size: 24px;
-    font-family: Eczar, sans-serif;   
-    color: var(--accent-color);
-}
-
-.popular-recipes .recipes-card {
-    margin-bottom: 30px;
 }
 
 .recipes-card__action-button {
@@ -144,12 +158,31 @@ p {
 }
 
 .recipes-card__action-button:hover > i {
-    color: var(--accent-color);
+    color: var(--primary-color);
+}
+
+.margin-bottom--md {
+    margin-bottom: 30px;    
+}
+
+.margin-bottom--lg {
+    margin-bottom: 100px;    
+}
+
+.margin-top--lg {
+    margin-top: 100px;    
+}
+
+.margin-bottom--xl {
+    margin-bottom: 300px;    
+}
+
+.margin-top--md {
+    margin-top: 30px;    
 }
 
 @media (max-width: 600px) {
-    .slide-text,
-    .about-us__text {
+    .slide-text {
         font-size: 30px;
         line-height: 2.5rem;
     }

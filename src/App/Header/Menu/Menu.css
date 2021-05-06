@@ -1,18 +1,18 @@
-.menu {
+.menu {    
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    
 }
 
 .menu__item {    
     padding: 10px;
 }
 
-.menu__item a {
+.menu__item_link {
     color: black;
 }
 
-.menu__item a:hover {
-    color: var(--accent-color);
+.menu__item_link:hover {
+    color: var(--primary-color);
 }
 
 .mobile-menu {

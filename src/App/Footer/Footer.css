@@ -13,11 +13,6 @@
     border-top: 1px solid silver;
 }
 
-.footer .title {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
 .socials.offset-top,
 .about-us-list.offset-top {
     margin-top: 30px;

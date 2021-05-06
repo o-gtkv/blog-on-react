@@ -52,5 +52,5 @@
 
 .like-count__icon {
     cursor: pointer;
-    color: var(--accent-color);
+    color: var(--primary-color);
 }

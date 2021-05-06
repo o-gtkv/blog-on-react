@@ -1,0 +1,12 @@
+.team-member-card {
+    text-align: center;
+}
+
+.team-member-card__name {
+    font: normal 32px Eczar, sans-serif;
+    color: var(--primary-color);
+}
+
+.team-member-card__personal-data {
+    font: italic 15px Cardo, sans-serif;
+}
