@@ -1,0 +1,11 @@
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 25px;
+}
+
+.contact-item__icon {
+    font-size: 50px;
+    color: var(--primary-color);
+}

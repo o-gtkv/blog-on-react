@@ -1,8 +1,18 @@
 import React  from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const Contact = () => {
+import './Contact.css'
+
+const Contact = ({icon, title, contact}) => {
     return (
-        <div>
+        <div className="contact-item margin-top--md margin-bottom--md">
+            <div>
+                <FontAwesomeIcon className="contact-item__icon" icon={icon} />
+            </div>
+            <div>
+                <div className="text">{title}</div>
+                <div>{contact}</div>
+            </div>
         </div>
     )
 }

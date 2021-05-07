@@ -4,7 +4,8 @@ const teamDB = [
         name: 'Nulla Mauris',
         age: 25,
         country: 'Australia',
-        about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris dolor, gravida a varius blandit, auctor eget purus.'
+        about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris dolor, gravida a varius blandit, auctor eget purus.',
+        id: 1
     },
 
     {
@@ -12,7 +13,8 @@ const teamDB = [
         name: 'Varius Blandit',
         age: 72,
         country: 'Australia',
-        about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris dolor, gravida a varius blandit, auctor eget purus.'
+        about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris dolor, gravida a varius blandit, auctor eget purus.',
+        id: 2
     },
 
     {
@@ -20,7 +22,8 @@ const teamDB = [
         name: 'Auctor Eget',
         age: 52,
         country: 'Australia',
-        about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris dolor, gravida a varius blandit, auctor eget purus.'
+        about: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mauris dolor, gravida a varius blandit, auctor eget purus.',
+        id: 3
     },
 ]
 

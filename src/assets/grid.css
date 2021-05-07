@@ -12,6 +12,10 @@
     margin-right: -15px;
 }
 
+.row--justify-center {
+    justify-content: center;
+}
+
 .col-xs-2 {
     flex: 0 0 16.6666667%;
     max-width: 16.6666667%;

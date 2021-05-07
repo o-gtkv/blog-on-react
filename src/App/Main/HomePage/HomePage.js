@@ -4,7 +4,7 @@ import Slider from './Slider/Slider'
 import PopularRecipesSection from './PopularRecipesSection/PopularRecipesSection'
 import ArticlesSection from './ArticlesSection/ArticlesSection'
 import AboutUsSection from './AboutUsSection/AboutUsSection'
-import AllRecipesLink from '../AllRecipesLink/AllRecipesLink'
+import AllRecipesLink from '../Components/AllRecipesLink/AllRecipesLink'
 
 const HomePage = () => {
     return (

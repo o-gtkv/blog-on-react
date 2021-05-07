@@ -24,6 +24,10 @@ img {
     height: auto;
 }
 
+textarea { 
+    resize: vertical; 
+}
+
 strong {
     font-weight: bold;
 }
@@ -123,15 +127,37 @@ h5 {
     opacity: var(--text-opacity);
 }
 
+.adjacent-form-controls {        
+    display: flex;
+    column-gap: 15px;
+}
+
+.form {
+    width: 100%;
+}
+
+.form__control {
+    padding: 15px;
+    border: 1px solid rgba(192, 192, 192, 0.623);   
+    width: 100%;
+    margin-bottom: 15px;
+    font-family: Eczar, sans-serif;
+}
+
 .btn-link {
     display: inline-block;
+}
+    
+.btn-link, .btn {
+    border: 0;
     padding: 15px 30px;
     color: white;
     background-color: var(--primary-color);    
     filter: brightness(1);
 }
 
-.btn-link:hover {
+.btn-link:hover,
+.btn:hover   {
     color: white;    
     filter: brightness(0.95);
     text-decoration: none;    
@@ -158,6 +184,27 @@ h5 {
 }
 
 .recipes-card__action-button:hover > i {
+    color: var(--primary-color);
+}
+
+.line {    
+    border-bottom: 1px solid;
+    width: 150px;
+}
+
+.line--width-bold {
+    border-bottom-width: 5px;
+}
+
+.line--grow-max {
+    width: 100%;
+}
+
+.line--color-gray {
+    color: #dedee2;
+}
+
+.line--color-primary {
     color: var(--primary-color);
 }
 
