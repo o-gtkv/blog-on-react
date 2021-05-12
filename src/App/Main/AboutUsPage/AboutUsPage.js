@@ -4,7 +4,6 @@ import TeamMemberCard from './TeamMemberCard/TeamMemberCard'
 import AllRecipesLink from '../Components/AllRecipesLink/AllRecipesLink'
 
 import teamDB from './teamDB'
-import '../HomePage/AboutUsSection/AboutUsSection.css'
 
 const AboutUsPage = () => {
     return (

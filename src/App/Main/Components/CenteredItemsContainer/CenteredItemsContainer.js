@@ -8,8 +8,8 @@ const CenteredItemsContainer = ({backgroundImage, height, children}) => {
         alignItems: 'center',
         textAlign: 'center',
         height: height,
-        backgroundImage: `url(${backgroundImage})`
-        backgroundAttachment: 'fixed    '
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundAttachment: 'fixed'
     }
 
     return (

@@ -9,14 +9,14 @@ import AllRecipesLink from '../Components/AllRecipesLink/AllRecipesLink'
 const HomePage = () => {
     return (
         <Fragment>
-            <Slider backgroundImage="/img/home_diet_sectionbg1.jpg">
+            <Slider backgroundImage="/img/home_diet_sectionbg1.jpg" height={"800px"}>
                 <div className="slide-text">
                     Welcome to the place full of healthy food and ideas to keep you fit
                 </div>
             </Slider>
             <PopularRecipesSection />
             <AllRecipesLink />
-            <Slider backgroundImage="/img/home_diet_sectionbg2.jpg">
+            <Slider backgroundImage="/img/home_diet_sectionbg2.jpg" height={"800px"}>
                 <Fragment>
                     <div>
                         <img src="/img/home_diet_blockquote.png" alt="" />
