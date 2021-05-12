@@ -5,12 +5,20 @@ import Header from './Header/Header'
 import Main from './Main/Main'
 import Footer from './Footer/Footer'
 
-class App extends Component {
+import recipesDB from './recipesDB'
+
+class App extends Component {    
+
+    constructor() {
+        super()
+        recipesDB.sort((recipe1, recipe2) => recipe1.category < recipe2.category)     
+    }        
+
     render() {
         return ( 
             <BrowserRouter>    
                 <Header />
-                <Main />    
+                <Main recipesDB={recipesDB}/>    
                 <Footer />            
             </BrowserRouter>
         )

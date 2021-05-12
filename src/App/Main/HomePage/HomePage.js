@@ -6,7 +6,7 @@ import ArticlesSection from './ArticlesSection/ArticlesSection'
 import AboutUsSection from './AboutUsSection/AboutUsSection'
 import AllRecipesLink from '../Components/AllRecipesLink/AllRecipesLink'
 
-const HomePage = () => {
+const HomePage = ({recipesDB}) => {    
     return (
         <Fragment>
             <Slider backgroundImage="/img/home_diet_sectionbg1.jpg" height={"800px"}>
@@ -14,7 +14,7 @@ const HomePage = () => {
                     Welcome to the place full of healthy food and ideas to keep you fit
                 </div>
             </Slider>
-            <PopularRecipesSection />
+            <PopularRecipesSection recipesDB={recipesDB}/>
             <AllRecipesLink />
             <Slider backgroundImage="/img/home_diet_sectionbg2.jpg" height={"800px"}>
                 <Fragment>

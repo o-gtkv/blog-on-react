@@ -12,7 +12,7 @@ const AboutUsSection = () => {
                         <div className="col-xs-8">
                             <h5 className="text--color-primary text--align-center margin-top--md">About us</h5>
                             <p className="text--align-center">
-                                <h2 className="text--color-white">
+                                <h2 className="text--color-white slide-text">
                                     Maecenas eleifend erat at justo fringilla imperdiet id ac magna. Suspendisse vel facilisis
                                     odio, at ornare malesuada.
                                 </h2>

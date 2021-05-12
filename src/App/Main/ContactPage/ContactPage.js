@@ -7,14 +7,15 @@ import FeedbackForm from './FeedbackForm/FeedbackForm'
 import AllRecipesLink from '../Components/AllRecipesLink/AllRecipesLink'
 
 import './ContactPage.css'
+import CenteredItemsContainer from '../Components/CenteredItemsContainer/CenteredItemsContainer'
 
 
 const ContactPage = () => {
     return (
         <Fragment>            
-            <div className="centered-item-stack contact-page__top-img">
-                <h2 className="text--color-white">Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor facilisis.</h2>
-            </div>            
+            <CenteredItemsContainer backgroundImage={"/img/home_diet_sectionbg4.jpg"} height={"870px"}>            
+                <h2 className="text--color-white">Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor facilisis.</h2>            
+            </CenteredItemsContainer>
             <div className="container">
                 <div className="row row--justify-center">
                     <div className="col-xs-12 col-md-4">
