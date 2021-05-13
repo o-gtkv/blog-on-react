@@ -7,7 +7,7 @@ import './RecipesCard.css'
 
 const RecipesCard = ({image, name, description, rate, category}) => {    
     return (
-        <div className="recipes-card margin-bottom-md">
+        <div className="recipes-card margin-bottom--md margin-top--md">
             <div className="recipes-card__picture">
                 <img src={image} alt="" />
                 <div className="recipes-card__actions">

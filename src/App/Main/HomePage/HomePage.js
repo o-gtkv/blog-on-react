@@ -9,7 +9,7 @@ import AllRecipesLink from '../Components/AllRecipesLink/AllRecipesLink'
 const HomePage = ({recipesDB}) => {    
     return (
         <Fragment>
-            <Slider backgroundImage="/img/home_diet_sectionbg1.jpg" height={"800px"}>
+            <Slider backgroundImage="/img/home_diet_sectionbg1.jpg" height="800px">
                 <div className="slide-text">
                     Welcome to the place full of healthy food and ideas to keep you fit
                 </div>
