@@ -7,13 +7,14 @@ import ContactPage from './ContactPage/ContactPage'
 import RecipesPage from './RecipesPage/RecipesPage'
 
 const Main = ({recipesDB}) => {    
-
     return (
         <main className="main">
             <Route exact path="/" render={() => <HomePage recipesDB={recipesDB} />} />
             <Route exact path="/about-us" component={AboutUsPage} />
             <Route exact path="/contact" component={ContactPage} />            
             <Route exact path="/breakfast" render={() => <RecipesPage recipesDB={recipesDB} />} />
+            <Route exact path="/lunch" render={() => <RecipesPage recipesDB={recipesDB} />} />
+            <Route exact path="/dinner" render={() => <RecipesPage recipesDB={recipesDB} />} />
         </main>
     )    
 }

@@ -12,11 +12,11 @@ const RecipesPage = ({recipesDB}) => {
             <div className="container">
                 <div className="row">
                     <div className="col-xs-12">
-                        <RecipesList recipesDB={recipesDB} category="breakfast" />
+                        <RecipesList recipesDB={recipesDB} />
                     </div>
                 </div>
             </div>
-            <Panel />
+            <Panel className="margin-right--md margin-left--md" />
         </Fragment>
     )
 }

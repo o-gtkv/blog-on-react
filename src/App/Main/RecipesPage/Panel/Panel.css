@@ -1,12 +1,20 @@
 .panel {
-    width: 100%;
+    max-width: 100%;
     background-color: #eeeef2;
 }
 
-.panel__child {    
-    padding: 50px 0;    
+.panel__child {
+    flex-grow: 1;
+    padding: 50px 0;
 }
 
 .panel__child + .panel__child {
     border-top: 1px solid silver;
+}
+
+@media (max-width: 768px) {
+    .panel__child {
+        display: flex;                 
+        justify-content: center;
+    }    
 }

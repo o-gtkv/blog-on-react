@@ -1,0 +1,23 @@
+.category-list {       
+    color: white;
+    max-width: 350px;
+    background-color: var(--primary-color);
+    list-style: square inside
+}
+
+.category-list__item {    
+    padding: 15px;
+}
+
+.category-list__item + .category-list__item {
+    background: linear-gradient(#9acc7e, #9acc7e) top left /20% 1px no-repeat;    
+}
+
+.category-list__item-link {
+    color: white;
+}
+
+.category-list__item-link:hover {
+    color: white;
+    text-decoration: underline;
+}
