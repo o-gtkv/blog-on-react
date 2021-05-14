@@ -3,20 +3,20 @@ import CenteredItemsContainer from '../Components/CenteredItemsContainer/Centere
 import RecipesList from '../Components/RecipesList/RecipeList'
 import Panel from './Panel/Panel'
 
-const RecipesPage = ({recipesDB}) => {
+const RecipesPage = ({recipesDB, category}) => {
     return (
         <Fragment>
             <CenteredItemsContainer backgroundImage="/img/home_diet_sectionbg4.jpg" height="200px">
-                <h2 className="text--color-white slide-text">Breakfast</h2>
+                <h2 className="text--color-white slide-text">{category}</h2>
             </CenteredItemsContainer>
             <div className="container">
                 <div className="row">
                     <div className="col-xs-12">
-                        <RecipesList recipesDB={recipesDB} />
+                        <RecipesList category={category} recipesDB={recipesDB} />
                     </div>
                 </div>
             </div>
-            <Panel className="margin-right--md margin-left--md" />
+            <Panel className="margin-right--md margin-left--md" recipeDB={recipesDB} />
         </Fragment>
     )
 }

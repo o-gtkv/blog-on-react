@@ -14,7 +14,7 @@ const PopularRecipesSection = ({recipesDB}) => {
                         </div>
                     </div>                    
                 </div>                                
-                <RecipesList recipesDB={recipesDB} category={'breakfast'} />                    
+                <RecipesList recipesDB={recipesDB} category={'popular'} />                    
             </div>
         </section>
     )

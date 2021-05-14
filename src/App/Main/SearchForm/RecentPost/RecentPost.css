@@ -1,0 +1,38 @@
+.recent-post {    
+    width: max-content;
+    display: flex;
+    background-color: white;
+}
+
+.recent-post__img > img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.recent-post__info {
+    padding: 0 15px; 
+    min-width: 300px;
+}
+
+.recent-post__info-item {
+    font-family: Eczar sans-serif;
+    font-size: 14px;
+    padding: 15px 0;
+}
+
+.recent-post__info-item + .recent-post__info-item {
+    border-top: 1px solid #e5e5e5;
+}
+
+.recent-post__info-item-date {
+    font-family: Cardo sans-serif;
+    margin-left: 5px;
+}
+
+.recent-post__info-item-date,
+.recent-post__info-item-icon {
+    font-size: 15px;
+    color: #a8a8a8;
+}

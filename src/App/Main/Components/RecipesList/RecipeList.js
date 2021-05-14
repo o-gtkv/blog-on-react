@@ -5,13 +5,12 @@ const RecipesList = ({recipesDB, category}) => {
     if (category === 'popular') {
         const maxCount = 6
         recipesDB = recipesDB.slice(0, Math.min(maxCount, recipesDB.length))
-    } else if (category === 'breakfast') {
-        recipesDB = recipesDB.filter(recipe => recipe.category === category)
+    } else {
+        recipesDB = recipesDB.filter(recipe => recipe.category === category.toLowerCase())
     }
 
     const itemsPerRow = 3    
-    const itemsPerCol = recipesDB.length % itemsPerRow
-
+    const itemsPerCol = Math.floor(recipesDB.length / itemsPerRow)
 
     // const table = []
     // for (let i = 0; i < itemsPerRow; ++i) {
@@ -26,24 +25,20 @@ const RecipesList = ({recipesDB, category}) => {
     //     }
     // }
 
-
     let k = 0;            
-    let h = Math.floor(recipesDB.length / itemsPerRow)
-
-    console.log(h);
+    let h = recipesDB.length % itemsPerRow
 
     const recipesList = []
-    for (let i = 0; i < 3; ++i) {
+    for (let i = 0; i < itemsPerRow; ++i) {
         const recipes = []
         for (let j = 0; j < itemsPerCol; ++j) {
-            recipes.push(<RecipesCard {...recipesDB[k++]} />)
+            recipes.push(<RecipesCard key={recipesDB[k].id} {...recipesDB[k++]}  />)
             if (h-- > 0) {
-                recipes.push(<RecipesCard {...recipesDB[k++]} />)                
+                recipes.push(<RecipesCard key={recipesDB[k].id} {...recipesDB[k++]} />)
             }
         }
-
         recipesList.push(
-            <div className="col-xs-12 col-md-4">
+            <div key={i} className="col-xs-12 col-md-4">
                 {recipes}
             </div>
         )

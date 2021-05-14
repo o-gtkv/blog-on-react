@@ -207,6 +207,10 @@ h5 {
     margin-bottom: 30px;    
 }
 
+.margin-bottom--xs {
+    margin-bottom: 15px;    
+}
+
 .margin-bottom--lg {
     margin-bottom: 100px;    
 }

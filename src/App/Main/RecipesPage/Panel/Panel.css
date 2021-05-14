@@ -4,12 +4,16 @@
 }
 
 .panel__child {
-    flex-grow: 1;
+    /* flex-grow: 1; */
     padding: 50px 0;
 }
 
 .panel__child + .panel__child {
     border-top: 1px solid silver;
+}
+
+.panel__recent-post + .panel__recent-post {
+    margin-top: 15px;
 }
 
 @media (max-width: 768px) {

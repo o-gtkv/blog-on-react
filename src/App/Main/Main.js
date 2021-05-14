@@ -12,9 +12,9 @@ const Main = ({recipesDB}) => {
             <Route exact path="/" render={() => <HomePage recipesDB={recipesDB} />} />
             <Route exact path="/about-us" component={AboutUsPage} />
             <Route exact path="/contact" component={ContactPage} />            
-            <Route exact path="/breakfast" render={() => <RecipesPage recipesDB={recipesDB} />} />
-            <Route exact path="/lunch" render={() => <RecipesPage recipesDB={recipesDB} />} />
-            <Route exact path="/dinner" render={() => <RecipesPage recipesDB={recipesDB} />} />
+            <Route exact path="/breakfast" render={() => <RecipesPage category="Breakfast" recipesDB={recipesDB} />} />
+            <Route exact path="/lunch" render={() => <RecipesPage category="Lunch" recipesDB={recipesDB} />} />
+            <Route exact path="/dinner" render={() => <RecipesPage category="Dinner" recipesDB={recipesDB} />} />
         </main>
     )    
 }
