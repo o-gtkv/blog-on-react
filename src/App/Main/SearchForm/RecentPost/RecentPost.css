@@ -1,19 +1,30 @@
-.recent-post {    
-    width: max-content;
+.recent-post {        
     display: flex;
-    background-color: white;
+    width: max-content;    
+    background-color: white;    
 }
 
-.recent-post__img > img {
+.recent-post + .recent-post {
+    margin-top: 15px;
+}
+
+.recent-post:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.recent-post__img img {
+    margin-left: auto;
     display: block;
     width: 100px;
     height: 100px;
     object-fit: cover;
+    cursor: pointer;    
 }
 
-.recent-post__info {
+.recent-post__info {        
     padding: 0 15px; 
-    max-width: 300px;
+    width: 300px;    
 }
 
 .recent-post__info-item {

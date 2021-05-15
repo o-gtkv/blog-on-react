@@ -3,7 +3,7 @@
     background-color: #eeeef2;
 }
 
-.panel__child {    
+.panel__child {
     padding: 25px 0;
 }
 
@@ -16,13 +16,7 @@
 }
 
 @media (max-width: 768px) {
-    .panel {
-        display: flex;                  
-        flex-direction: column;        
-    }    
-
-    .panel__child1 {
-        flex-grow: 1;
-        /* width: 100%; */
+       .panel__child * {
+        width: 100%;
     }
 }

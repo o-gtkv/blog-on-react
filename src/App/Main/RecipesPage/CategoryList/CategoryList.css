@@ -1,6 +1,6 @@
 .category-list {       
     color: white;
-    max-width: 350px;
+    width: 350px;
     background-color: var(--primary-color);
     list-style: square inside
 }
