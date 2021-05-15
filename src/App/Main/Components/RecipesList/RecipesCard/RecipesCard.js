@@ -11,7 +11,7 @@ const RecipesCard = ({image, name, description, rate, category}) => {
             <div className="recipes-card__picture">
                 <img src={image} alt="" />
                 <div className="recipes-card__actions">
-                    <a className="recipes-card__action-button" href="#">                        
+                    <a className="recipes-card__action-button" href={image}>                        
                         <FontAwesomeIcon icon={faSearch} />
                     </a>
                     <a className="recipes-card__action-button" href="#">                        

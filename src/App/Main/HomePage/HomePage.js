@@ -22,7 +22,7 @@ const HomePage = ({recipesDB}) => {
                         <img src="/img/home_diet_blockquote.png" alt="" />
                     </div>
                     <div className="slide-text">                    
-                        Red meat is a good source of protein, iron, vitamin B, riboflavin, thiamin and niacin.
+                        Red meat is a good source of protein, iron, vitamin B, riboflavin, thiamin and niacin.                        
                     </div>
                 </Fragment>
             </Slider>

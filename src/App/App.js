@@ -8,7 +8,6 @@ import Footer from './Footer/Footer'
 import recipesDB from './recipesDB'
 
 class App extends Component {    
-
     constructor() {
         super()
         recipesDB.sort((recipe1, recipe2) => recipe1.category < recipe2.category)     

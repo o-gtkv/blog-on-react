@@ -21,9 +21,9 @@ class SearchForm extends Component {
 
     render() {
         return (
-            <form className={this.props.className + " search_form"} onSubmit={this.onSublmit}>
+            <form className={this.props.className + " search-form"} onSubmit={this.onSublmit}>
                 <input 
-                    className="search_form__control" 
+                    className="search-form__control" 
                     type="text" 
                     value={this.state.value} 
                     placeholder="Enter your search" 

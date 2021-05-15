@@ -11,7 +11,9 @@ const Panel = ({recipeDB, className=''}) => {
 
     return (
         <div className={"panel " + className}>
-            <SearchForm className="panel__child" />
+            <div className="panel__child">
+                <SearchForm className="panel__child1" />
+            </div>
             <div className="panel__child">
                 <div>
                     <h5 className="margin-bottom--xs">About us</h5>

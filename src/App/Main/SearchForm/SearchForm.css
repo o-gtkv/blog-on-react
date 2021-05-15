@@ -1,8 +1,8 @@
-.search_form {
+.search-form {
     max-width: 300px;
 }
 
-.search_form__control {
+.search-form__control {
     padding: 15px;
     border: 1px solid rgba(192, 192, 192, 0.623);
     width: 100%;    
