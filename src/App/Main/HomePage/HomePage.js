@@ -6,7 +6,7 @@ import ArticlesSection from './ArticlesSection/ArticlesSection'
 import AboutUsSection from './AboutUsSection/AboutUsSection'
 import AllRecipesLink from '../Components/AllRecipesLink/AllRecipesLink'
 
-const HomePage = ({recipesDB}) => {    
+const HomePage = ({recipesDB, articlesDB}) => {
     return (
         <Fragment>
             <Slider backgroundImage="/img/home_diet_sectionbg1.jpg" height="800px">
@@ -21,12 +21,12 @@ const HomePage = ({recipesDB}) => {
                     <div>
                         <img src="/img/home_diet_blockquote.png" alt="" />
                     </div>
-                    <div className="slide-text">                    
-                        Red meat is a good source of protein, iron, vitamin B, riboflavin, thiamin and niacin.                        
+                    <div className="slide-text">
+                        Red meat is a good source of protein, iron, vitamin B, riboflavin, thiamin and niacin.
                     </div>
                 </Fragment>
             </Slider>
-            <ArticlesSection />
+            <ArticlesSection articlesDB={articlesDB} />
             <AboutUsSection />
         </Fragment>
     )

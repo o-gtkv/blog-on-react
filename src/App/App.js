@@ -6,6 +6,7 @@ import Main from './Main/Main'
 import Footer from './Footer/Footer'
 
 import recipesDB from './recipesDB'
+import articlesDB from './articlesDB'
 
 class App extends Component {    
     constructor() {
@@ -17,7 +18,7 @@ class App extends Component {
         return ( 
             <BrowserRouter>    
                 <Header />
-                <Main recipesDB={recipesDB}/>    
+                <Main recipesDB={recipesDB} articlesDB={articlesDB} />    
                 <Footer />            
             </BrowserRouter>
         )

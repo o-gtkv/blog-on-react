@@ -6,10 +6,10 @@ import AboutUsPage from './AboutUsPage/AboutUsPage'
 import ContactPage from './ContactPage/ContactPage'
 import RecipesPage from './RecipesPage/RecipesPage'
 
-const Main = ({recipesDB}) => {    
+const Main = ({recipesDB, articlesDB}) => {    
     return (
         <main className="main">
-            <Route exact path="/" render={() => <HomePage recipesDB={recipesDB} />} />
+            <Route exact path="/" render={() => <HomePage recipesDB={recipesDB} articlesDB={articlesDB} />} />
             <Route exact path="/about-us" component={AboutUsPage} />
             <Route exact path="/contact" component={ContactPage} />            
             <Route exact path="/breakfast" render={() => <RecipesPage category="Breakfast" recipesDB={recipesDB} />} />
