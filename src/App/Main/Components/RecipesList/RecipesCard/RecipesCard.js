@@ -2,11 +2,15 @@ import React from 'react'
 import { faLink, faSearch } from '@fortawesome/free-solid-svg-icons'
 import { faHeart } from '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Link } from 'react-router-dom'
 
 import './RecipesCard.css'
 
-const RecipesCard = ({image, name, description, rate, category}) => {    
-        return (
+
+const RecipesCard = ({id,image, name, description, rate, category}) => {    
+    const recipePath = `/recipes/${id}`
+
+    return (
         <div className="recipes-card margin-bottom--md margin-top--md">
             <div className="recipes-card__picture">
                 <img src={image} alt="" />
@@ -14,9 +18,9 @@ const RecipesCard = ({image, name, description, rate, category}) => {
                     <a className="recipes-card__action-button" href={image}>                        
                         <FontAwesomeIcon icon={faSearch} />
                     </a>
-                    <a className="recipes-card__action-button" href="#">                        
+                    <Link className="recipes-card__action-button" to={recipePath}>                        
                         <FontAwesomeIcon icon={faLink} />
-                    </a>
+                    </Link>
                 </div>
             </div>
             <div className="recipes-card__info">
@@ -30,7 +34,7 @@ const RecipesCard = ({image, name, description, rate, category}) => {
                         <span className="like-count__number">{rate}</span>
                     </div>
                     <div className="read-more-link">
-                        <a href="#">Read more</a>
+                        <Link to={recipePath}>Read more</Link>                        
                     </div>
                 </div>
             </div>

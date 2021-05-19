@@ -18,8 +18,8 @@ class App extends Component {
         return ( 
             <BrowserRouter>    
                 <Header />
-                <Main recipesDB={recipesDB} articlesDB={articlesDB} />    
-                <Footer />            
+                <Main recipesDB={recipesDB} articlesDB={articlesDB} />
+                <Footer />   
             </BrowserRouter>
         )
     }

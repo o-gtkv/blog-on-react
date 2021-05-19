@@ -81,10 +81,12 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="container footer-section-2">
-                <div className="row">
-                    <div className="col-xs-12">
-                        <span className="text">© 2021 BeDiet - BeTheme. All Rights Reserved. Muffin group</span>
+            <div className="footer-section-2">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-xs-12">
+                            <span className="text">© 2021 BeDiet - BeTheme. All Rights Reserved. Muffin group</span>
+                        </div>
                     </div>
                 </div>
             </div>

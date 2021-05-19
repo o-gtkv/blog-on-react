@@ -1,0 +1,28 @@
+.recipe-page__content {
+    display: flex;
+    margin-top: -30px;
+    /* margin-bottom: 30px; */
+}
+
+.recipe-page__content-main {
+    background-color: white;
+}
+
+.recipe-page__content-info {
+    background-color: #eeeef2;
+    margin-left: auto;
+}
+
+.recipe-page__content-main-block {
+    padding: 30px 30px;
+}
+
+.recipe-page__content-main-block + .recipe-page__content-main-block {
+    background: linear-gradient(#9acc7e, #9acc7e) top /95% 1px no-repeat;
+}
+
+.ingredients-list {
+    line-height: 30px;
+    margin-left: 15px;
+    list-style: disc inside;
+}
