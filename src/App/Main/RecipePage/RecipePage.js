@@ -5,9 +5,10 @@ import AllRecipesLink from '../Components/AllRecipesLink/AllRecipesLink'
 // import Panel from '..   /Components/Panel/Panel'
 
 import './RecipePage.css'
+import Comments from '../Components/Comments/Comments'
 
-const RecipePage = ({recipesDB, match}) => {
-    const {image, name} = {...recipesDB.find(recipe => recipe.id === Number(match.params.id))}
+const RecipePage = ({recipesDB, match, comments, newComment}) => {
+    const {id, image, name} = {...recipesDB.find(recipe => recipe.id === Number(match.params.id))}
     
     return (
         <Fragment>
@@ -92,7 +93,12 @@ const RecipePage = ({recipesDB, match}) => {
                         </div>                    
                     </div>
                 </div>
-            </div>
+                <div className="row">
+                    <div className="col-xs-12 col-md-9">
+                        <Comments className="margin-top--md margin-bottom--md" id={id} comments={comments} newComment={newComment} />                                            
+                    </div>
+                </div>                
+            </div>                    
             <AllRecipesLink />
         </Fragment>
     )

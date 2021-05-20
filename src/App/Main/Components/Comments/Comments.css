@@ -1,0 +1,7 @@
+.comments-list {
+    background-color: #eeeef2;
+}
+
+.comments-list__item + .comments-list__item {
+    margin-top: 15px;
+}
