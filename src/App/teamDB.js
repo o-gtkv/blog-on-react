@@ -9,7 +9,7 @@ const teamDB = [
     },
 
     {
-        photo: 'img/home_diet_about3.png',
+        photo: '/img/home_diet_about3.png',
         name: 'Varius Blandit',
         age: 72,
         country: 'Australia',
@@ -18,7 +18,7 @@ const teamDB = [
     },
 
     {
-        photo: 'img/home_diet_about4.png',
+        photo: '/img/home_diet_about4.png',
         name: 'Auctor Eget',
         age: 52,
         country: 'Australia',

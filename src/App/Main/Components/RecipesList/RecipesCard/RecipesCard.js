@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { faLink, faSearch } from '@fortawesome/free-solid-svg-icons'
 import { faHeart } from '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -7,8 +7,10 @@ import { Link } from 'react-router-dom'
 import './RecipesCard.css'
 
 
-const RecipesCard = ({id,image, name, description, rate, category}) => {    
+const RecipesCard = ({id, image, name, description, likes}) => {
     const recipePath = `/recipes/${id}`
+
+    const [likesCount, incLikesCount] = useState(likes)
 
     return (
         <div className="recipes-card margin-bottom--md margin-top--md">
@@ -30,8 +32,8 @@ const RecipesCard = ({id,image, name, description, rate, category}) => {
                 </div>
                 <div className="recipes-card__opt">
                     <div className="like-count">                        
-                        <FontAwesomeIcon className="like-count__icon" icon={faHeart} />
-                        <span className="like-count__number">{rate}</span>
+                        <FontAwesomeIcon className="like-count__icon" icon={faHeart} onClick={() => incLikesCount(likesCount + 1)} />
+                        <span className="like-count__number">{likesCount}</span>
                     </div>
                     <div className="read-more-link">
                         <Link to={recipePath}>Read more</Link>                        

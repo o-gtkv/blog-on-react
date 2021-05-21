@@ -47,7 +47,7 @@ const Comments = ({className, id, comments, newComment}) => {
                         if (comments[id]) {
                             return comments[id].map((comment, i) => (
                                 <div  className="comments-list__item" key={i}>
-                                    <div style={{lineHeight: '20px'}}>{(new Date ).toDateString() + ' from ' + comment.name}</div>
+                                    <div style={{lineHeight: '20px'}}>{(new Date()).toDateString() + ' from ' + comment.name}</div>
                                     <div>{comment.text}</div>
                                 </div>
                             ))

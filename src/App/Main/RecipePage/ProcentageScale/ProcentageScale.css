@@ -1,0 +1,34 @@
+.procentage-scale {
+}
+
+.procentage-scale__info {
+    display: flex;
+    align-items: flex-end;
+}
+
+.procentage-scale__info-label {
+
+}
+
+.procentage-scale__info-value {
+    margin-left: auto;
+    border: 1px solid silver;
+    border-radius: 5px;
+    padding: 2px;
+}
+                    
+.procentage-scale__scale {
+    --border-radius: 5px;
+    margin-top: 10px;
+    border: 1px solid silver;
+    border-radius: var(--border-radius);
+    height: 30px;
+}
+
+.procentage-scale__scale-value {
+    height: 100%;
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius);
+    border: 0;
+    /* width: 65%; */
+}

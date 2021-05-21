@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react'
 
-import TeamMemberCard from './TeamMemberCard/TeamMemberCard'
+import TeamMemberCard from '../Components/TeamMemberCard/TeamMemberCard'
 import AllRecipesLink from '../Components/AllRecipesLink/AllRecipesLink'
 
-import teamDB from './teamDB'
+import teamDB from '../../teamDB'
 
 const AboutUsPage = () => {
     return (
@@ -31,7 +31,7 @@ const AboutUsPage = () => {
                     {
                         teamDB.map(teamMemberData => (
                             <div className="col-xs-12 col-md-4" key={teamMemberData.id}>
-                                <TeamMemberCard {...teamMemberData} />
+                                <TeamMemberCard {...teamMemberData} textAlignCenter={true} />
                             </div>
                         ))
                     }

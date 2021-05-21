@@ -26,9 +26,9 @@ class Menu extends Component {
                         <li onClick={this.toggleMenuBar} className="menu__item">
                             <Link className="menu__item-link" to="/about-us">About us</Link>
                         </li>
-                        <li onClick={this.toggleMenuBar} className="menu__item">
+                        {/* <li onClick={this.toggleMenuBar} className="menu__item">
                             <Link className="menu__item-link" to="/diets">Diets</Link>
-                        </li>
+                        </li> */}
                         <li onClick={this.toggleMenuBar} className="menu__item">
                             <Link className="menu__item-link" to="/breakfast">Breakfast</Link>
                         </li>

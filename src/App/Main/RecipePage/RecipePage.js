@@ -2,12 +2,16 @@ import React, { Fragment } from 'react'
 
 import CenteredItemsContainer from '../Components/CenteredItemsContainer/CenteredItemsContainer'
 import AllRecipesLink from '../Components/AllRecipesLink/AllRecipesLink'
-// import Panel from '..   /Components/Panel/Panel'
+
+import Comments from '../Components/Comments/Comments'
+import TeamMemberCard from '../Components/TeamMemberCard/TeamMemberCard'
+import ProcentageScale from './ProcentageScale/ProcentageScale'
+
+import teamDB from '../../teamDB'
 
 import './RecipePage.css'
-import Comments from '../Components/Comments/Comments'
 
-const RecipePage = ({recipesDB, match, comments, newComment}) => {
+const RecipePage = ({recipesDB, match, comments, newComment, addComment}) => {
     const {id, image, name} = {...recipesDB.find(recipe => recipe.id === Number(match.params.id))}
     
     return (
@@ -20,7 +24,7 @@ const RecipePage = ({recipesDB, match, comments, newComment}) => {
                     <div className="col-xs-12">
                         <div className="recipe-page__content">
                             <div className="row">                                                   
-                                <div className="col-xs-12 col-md-9 recipe-page__content-main">                                     
+                                <div className="col-xs-12 col-md-8 recipe-page__content-main">                                     
                                     <div className="recipe-page__content-main-block">
                                         <h2 className="margin-top--md margin-bottom--md">Vontallen sallad</h2>
                                         <div className="line line--width-bold line--color-primary margin-bottom--md" />
@@ -86,8 +90,15 @@ const RecipePage = ({recipesDB, match, comments, newComment}) => {
                                         </div>
                                     </div>                                      
                                 </div>                        
-                                <div className="col-xs-12 col-md-3 recipe-page__content-info">                                
-                                    asd                                
+                                <div className="col-xs-12 col-md-4 recipe-page__content-info">                                
+                                    <TeamMemberCard className="recipe-page__content-info-block" {...teamDB[2]} photoInfoLayout={'horizontal'} />
+                                    <div className="recipe-page__content-info-block">
+                                        <h5 className="text--color-primary">Good advice</h5>
+                                        <p className="text good-advice">
+                                            Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.
+                                        </p>
+                                    </div>
+                                    <ProcentageScale className="recipe-page__content-info-block" label="Text" value={70} />
                                 </div>
                             </div>                            
                         </div>                    
