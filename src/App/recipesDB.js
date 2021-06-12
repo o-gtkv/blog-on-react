@@ -9,15 +9,39 @@ const recipesDB = [
         date: '2021-05-07',
         authorID: 1,
         fullDescription: {
-            ingredients: `<ul className="ingredients-list">
-                            <li>1 x lorem ipsum</li>
-                            <li>200g sit amet</li>
-                            <li>1,5l consectetur</li>
-                            <li>1,5l consectetur</li>
-                            <li>4 adipisicing</li>
-                            <li>elit and tempor</li>
-                          </ul>`,
-            preparation: ``,
+            content: 'Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.',
+            ingredients: [
+                '1 x lorem ipsum',
+                '200g sit amet',
+                '1,5l consectetur',
+                '1,5l consectetur',
+                '4 adipisicing',
+                'elit and tempor'
+            ],
+            preparation: {
+                text: 'Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.',
+                steps: [
+                    {
+                        img: '/img/preparation/step1.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step2.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step3.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step4.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },                    
+                ]
+            },
             advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.'
         }        
     },
@@ -32,15 +56,40 @@ const recipesDB = [
         date: '2021-05-07',
         authorID: 1,
         fullDescription: {
-            ingredients: `<ul className="ingredients-list">
-                            <li>1 x lorem ipsum</li>
-                            <li>200g sit amet</li>
-                            <li>1,5l consectetur</li>
-                            <li>1,5l consectetur</li>
-                            <li>4 adipisicing</li>
-                            <li>elit and tempor</li>
-                          </ul>`,
-            preparation: ''
+            content: 'Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.',
+            ingredients: [
+                '1 x lorem ipsum',
+                '200g sit amet',
+                '1,5l consectetur',
+                '1,5l consectetur',
+                '4 adipisicing',
+                'elit and tempor'
+            ],
+            preparation: {
+                text: 'Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.',
+                steps: [
+                    {
+                        img: '/img/preparation/step1.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step2.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step3.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step4.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },                    
+                ]
+            },
+            advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.'
         }
     },
 
@@ -54,15 +103,40 @@ const recipesDB = [
         date: '2021-05-07',
         authorID: 1,
         fullDescription: {
-            ingredients: `<ul className="ingredients-list">
-                            <li>1 x lorem ipsum</li>
-                            <li>200g sit amet</li>
-                            <li>1,5l consectetur</li>
-                            <li>1,5l consectetur</li>
-                            <li>4 adipisicing</li>
-                            <li>elit and tempor</li>
-                          </ul>`,
-            preparation: ''
+            content: 'Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.',
+            ingredients: [
+                '1 x lorem ipsum',
+                '200g sit amet',
+                '1,5l consectetur',
+                '1,5l consectetur',
+                '4 adipisicing',
+                'elit and tempor'
+            ],
+            preparation: {
+                text: 'Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.',
+                steps: [
+                    {
+                        img: '/img/preparation/step1.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step2.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step3.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step4.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },                    
+                ]
+            },
+            advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.'
         }
     },
 
@@ -76,15 +150,40 @@ const recipesDB = [
         date: '2021-05-07',
         authorID: 1,
         fullDescription: {
-            ingredients: `<ul className="ingredients-list">
-                            <li>1 x lorem ipsum</li>
-                            <li>200g sit amet</li>
-                            <li>1,5l consectetur</li>
-                            <li>1,5l consectetur</li>
-                            <li>4 adipisicing</li>
-                            <li>elit and tempor</li>
-                          </ul>`,
-            preparation: ''
+            content: 'Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.',
+            ingredients: [
+                '1 x lorem ipsum',
+                '200g sit amet',
+                '1,5l consectetur',
+                '1,5l consectetur',
+                '4 adipisicing',
+                'elit and tempor'
+            ],
+            preparation: {
+                text: 'Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.',
+                steps: [
+                    {
+                        img: '/img/preparation/step1.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step2.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step3.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step4.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },                    
+                ]
+            },
+            advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.'
         }
     },
 
@@ -98,15 +197,40 @@ const recipesDB = [
         date: '2021-05-08',
         authorID: 1,
         fullDescription: {
-            ingredients: `<ul className="ingredients-list">
-                            <li>1 x lorem ipsum</li>
-                            <li>200g sit amet</li>
-                            <li>1,5l consectetur</li>
-                            <li>1,5l consectetur</li>
-                            <li>4 adipisicing</li>
-                            <li>elit and tempor</li>
-                          </ul>`,
-            preparation: ''
+            content: 'Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.',
+            ingredients: [
+                '1 x lorem ipsum',
+                '200g sit amet',
+                '1,5l consectetur',
+                '1,5l consectetur',
+                '4 adipisicing',
+                'elit and tempor'
+            ],
+            preparation: {
+                text: 'Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.',
+                steps: [
+                    {
+                        img: '/img/preparation/step1.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step2.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step3.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step4.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },                    
+                ]
+            },
+            advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.'
         }
     },
 
@@ -120,15 +244,40 @@ const recipesDB = [
         date: '2021-05-07',
         authorID: 1,
         fullDescription: {
-            ingredients: `<ul className="ingredients-list">
-                            <li>1 x lorem ipsum</li>
-                            <li>200g sit amet</li>
-                            <li>1,5l consectetur</li>
-                            <li>1,5l consectetur</li>
-                            <li>4 adipisicing</li>
-                            <li>elit and tempor</li>
-                          </ul>`,
-            preparation: ''
+            content: 'Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.',
+            ingredients: [
+                '1 x lorem ipsum',
+                '200g sit amet',
+                '1,5l consectetur',
+                '1,5l consectetur',
+                '4 adipisicing',
+                'elit and tempor'
+            ],
+            preparation: {
+                text: 'Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.',
+                steps: [
+                    {
+                        img: '/img/preparation/step1.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step2.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step3.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step4.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },                    
+                ]
+            },
+            advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.'
         }
     },    
 
@@ -142,15 +291,40 @@ const recipesDB = [
         date: '2021-05-07',
         authorID: 1,
         fullDescription: {
-            ingredients: `<ul className="ingredients-list">
-                            <li>1 x lorem ipsum</li>
-                            <li>200g sit amet</li>
-                            <li>1,5l consectetur</li>
-                            <li>1,5l consectetur</li>
-                            <li>4 adipisicing</li>
-                            <li>elit and tempor</li>
-                          </ul>`,
-            preparation: ''
+            content: 'Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.',
+            ingredients: [
+                '1 x lorem ipsum',
+                '200g sit amet',
+                '1,5l consectetur',
+                '1,5l consectetur',
+                '4 adipisicing',
+                'elit and tempor'
+            ],
+            preparation: {
+                text: 'Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.',
+                steps: [
+                    {
+                        img: '/img/preparation/step1.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step2.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step3.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step4.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },                    
+                ]
+            },
+            advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.'
         }
     },    
 
@@ -164,15 +338,40 @@ const recipesDB = [
         date: '2021-05-07',
         authorID: 1,
         fullDescription: {
-            ingredients: `<ul className="ingredients-list">
-                            <li>1 x lorem ipsum</li>
-                            <li>200g sit amet</li>
-                            <li>1,5l consectetur</li>
-                            <li>1,5l consectetur</li>
-                            <li>4 adipisicing</li>
-                            <li>elit and tempor</li>
-                          </ul>`,
-            preparation: ''
+            content: 'Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.',
+            ingredients: [
+                '1 x lorem ipsum',
+                '200g sit amet',
+                '1,5l consectetur',
+                '1,5l consectetur',
+                '4 adipisicing',
+                'elit and tempor'
+            ],
+            preparation: {
+                text: 'Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.',
+                steps: [
+                    {
+                        img: '/img/preparation/step1.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step2.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step3.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step4.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },                    
+                ]
+            },
+            advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.'
         }
     },    
 
@@ -186,15 +385,40 @@ const recipesDB = [
         date: '2021-05-07',
         authorID: 1,
         fullDescription: {
-            ingredients: `<ul className="ingredients-list">
-                            <li>1 x lorem ipsum</li>
-                            <li>200g sit amet</li>
-                            <li>1,5l consectetur</li>
-                            <li>1,5l consectetur</li>
-                            <li>4 adipisicing</li>
-                            <li>elit and tempor</li>
-                          </ul>`,
-            preparation: ''
+            content: 'Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.',
+            ingredients: [
+                '1 x lorem ipsum',
+                '200g sit amet',
+                '1,5l consectetur',
+                '1,5l consectetur',
+                '4 adipisicing',
+                'elit and tempor'
+            ],
+            preparation: {
+                text: 'Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.',
+                steps: [
+                    {
+                        img: '/img/preparation/step1.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step2.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step3.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step4.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },                    
+                ]
+            },
+            advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.'
         }
     },    
 
@@ -208,15 +432,40 @@ const recipesDB = [
         date: '2021-05-07',
         authorID: 1,
         fullDescription: {
-            ingredients: `<ul className="ingredients-list">
-                            <li>1 x lorem ipsum</li>
-                            <li>200g sit amet</li>
-                            <li>1,5l consectetur</li>
-                            <li>1,5l consectetur</li>
-                            <li>4 adipisicing</li>
-                            <li>elit and tempor</li>
-                          </ul>`,
-            preparation: ''
+            content: 'Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.',
+            ingredients: [
+                '1 x lorem ipsum',
+                '200g sit amet',
+                '1,5l consectetur',
+                '1,5l consectetur',
+                '4 adipisicing',
+                'elit and tempor'
+            ],
+            preparation: {
+                text: 'Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.',
+                steps: [
+                    {
+                        img: '/img/preparation/step1.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step2.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step3.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step4.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },                    
+                ]
+            },
+            advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.'
         }
     },        
 
@@ -230,15 +479,40 @@ const recipesDB = [
         date: '2021-05-07',
         authorID: 1,
         fullDescription: {
-            ingredients: `<ul className="ingredients-list">
-                            <li>1 x lorem ipsum</li>
-                            <li>200g sit amet</li>
-                            <li>1,5l consectetur</li>
-                            <li>1,5l consectetur</li>
-                            <li>4 adipisicing</li>
-                            <li>elit and tempor</li>
-                          </ul>`,
-            preparation: ''
+            content: 'Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.',
+            ingredients: [
+                '1 x lorem ipsum',
+                '200g sit amet',
+                '1,5l consectetur',
+                '1,5l consectetur',
+                '4 adipisicing',
+                'elit and tempor'
+            ],
+            preparation: {
+                text: 'Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.',
+                steps: [
+                    {
+                        img: '/img/preparation/step1.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step2.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step3.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step4.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },                    
+                ]
+            },
+            advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.'
         }
     },        
 
@@ -252,15 +526,40 @@ const recipesDB = [
         date: '2021-05-07',
         authorID: 1,
         fullDescription: {
-            ingredients: `<ul className="ingredients-list">
-                            <li>1 x lorem ipsum</li>
-                            <li>200g sit amet</li>
-                            <li>1,5l consectetur</li>
-                            <li>1,5l consectetur</li>
-                            <li>4 adipisicing</li>
-                            <li>elit and tempor</li>
-                          </ul>`,
-            preparation: ''
+            content: 'Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.',
+            ingredients: [
+                '1 x lorem ipsum',
+                '200g sit amet',
+                '1,5l consectetur',
+                '1,5l consectetur',
+                '4 adipisicing',
+                'elit and tempor'
+            ],
+            preparation: {
+                text: 'Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.',
+                steps: [
+                    {
+                        img: '/img/preparation/step1.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step2.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step3.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step4.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },                    
+                ]
+            },
+            advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.'
         }
     },
 
@@ -274,15 +573,40 @@ const recipesDB = [
         date: '2021-05-07',
         authorID: 1,
         fullDescription: {
-            ingredients: `<ul className="ingredients-list">
-                            <li>1 x lorem ipsum</li>
-                            <li>200g sit amet</li>
-                            <li>1,5l consectetur</li>
-                            <li>1,5l consectetur</li>
-                            <li>4 adipisicing</li>
-                            <li>elit and tempor</li>
-                          </ul>`,
-            preparation: ''
+            content: 'Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.',
+            ingredients: [
+                '1 x lorem ipsum',
+                '200g sit amet',
+                '1,5l consectetur',
+                '1,5l consectetur',
+                '4 adipisicing',
+                'elit and tempor'
+            ],
+            preparation: {
+                text: 'Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.',
+                steps: [
+                    {
+                        img: '/img/preparation/step1.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step2.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step3.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step4.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },                    
+                ]
+            },
+            advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.'
         }
     },
 
@@ -296,15 +620,40 @@ const recipesDB = [
         date: '2021-05-07',
         authorID: 1,
         fullDescription: {
-            ingredients: `<ul className="ingredients-list">
-                            <li>1 x lorem ipsum</li>
-                            <li>200g sit amet</li>
-                            <li>1,5l consectetur</li>
-                            <li>1,5l consectetur</li>
-                            <li>4 adipisicing</li>
-                            <li>elit and tempor</li>
-                          </ul>`,
-            preparation: ''
+            content: 'Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.',
+            ingredients: [
+                '1 x lorem ipsum',
+                '200g sit amet',
+                '1,5l consectetur',
+                '1,5l consectetur',
+                '4 adipisicing',
+                'elit and tempor'
+            ],
+            preparation: {
+                text: 'Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.',
+                steps: [
+                    {
+                        img: '/img/preparation/step1.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step2.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step3.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step4.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },                    
+                ]
+            },
+            advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.'
         }
     },
 
@@ -318,15 +667,40 @@ const recipesDB = [
         date: '2021-05-07',
         authorID: 1,
         fullDescription: {
-            ingredients: `<ul className="ingredients-list">
-                            <li>1 x lorem ipsum</li>
-                            <li>200g sit amet</li>
-                            <li>1,5l consectetur</li>
-                            <li>1,5l consectetur</li>
-                            <li>4 adipisicing</li>
-                            <li>elit and tempor</li>
-                          </ul>`,
-            preparation: ''
+            content: 'Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.',
+            ingredients: [
+                '1 x lorem ipsum',
+                '200g sit amet',
+                '1,5l consectetur',
+                '1,5l consectetur',
+                '4 adipisicing',
+                'elit and tempor'
+            ],
+            preparation: {
+                text: 'Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.',
+                steps: [
+                    {
+                        img: '/img/preparation/step1.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step2.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step3.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step4.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },                    
+                ]
+            },
+            advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.'
         }
     },
 
@@ -340,15 +714,40 @@ const recipesDB = [
         date: '2021-05-07',
         authorID: 1,
         fullDescription: {
-            ingredients: `<ul className="ingredients-list">
-                            <li>1 x lorem ipsum</li>
-                            <li>200g sit amet</li>
-                            <li>1,5l consectetur</li>
-                            <li>1,5l consectetur</li>
-                            <li>4 adipisicing</li>
-                            <li>elit and tempor</li>
-                          </ul>`,
-            preparation: ''
+            content: 'Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.',
+            ingredients: [
+                '1 x lorem ipsum',
+                '200g sit amet',
+                '1,5l consectetur',
+                '1,5l consectetur',
+                '4 adipisicing',
+                'elit and tempor'
+            ],
+            preparation: {
+                text: 'Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.',
+                steps: [
+                    {
+                        img: '/img/preparation/step1.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step2.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step3.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step4.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },                    
+                ]
+            },
+            advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.'
         }
     },
 
@@ -362,15 +761,40 @@ const recipesDB = [
         date: '2021-05-07',
         authorID: 1,
         fullDescription: {
-            ingredients: `<ul className="ingredients-list">
-                            <li>1 x lorem ipsum</li>
-                            <li>200g sit amet</li>
-                            <li>1,5l consectetur</li>
-                            <li>1,5l consectetur</li>
-                            <li>4 adipisicing</li>
-                            <li>elit and tempor</li>
-                          </ul>`,
-            preparation: ''
+            content: 'Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.',
+            ingredients: [
+                '1 x lorem ipsum',
+                '200g sit amet',
+                '1,5l consectetur',
+                '1,5l consectetur',
+                '4 adipisicing',
+                'elit and tempor'
+            ],
+            preparation: {
+                text: 'Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.',
+                steps: [
+                    {
+                        img: '/img/preparation/step1.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step2.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step3.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step4.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },                    
+                ]
+            },
+            advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.'
         }
     },    
 
@@ -384,15 +808,40 @@ const recipesDB = [
         date: '2021-05-07',
         authorID: 1,
         fullDescription: {
-            ingredients: `<ul className="ingredients-list">
-                            <li>1 x lorem ipsum</li>
-                            <li>200g sit amet</li>
-                            <li>1,5l consectetur</li>
-                            <li>1,5l consectetur</li>
-                            <li>4 adipisicing</li>
-                            <li>elit and tempor</li>
-                          </ul>`,
-            preparation: ''
+            content: 'Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.',
+            ingredients: [
+                '1 x lorem ipsum',
+                '200g sit amet',
+                '1,5l consectetur',
+                '1,5l consectetur',
+                '4 adipisicing',
+                'elit and tempor'
+            ],
+            preparation: {
+                text: 'Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.',
+                steps: [
+                    {
+                        img: '/img/preparation/step1.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step2.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step3.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },
+
+                    {
+                        img: '/img/preparation/step4.jpg',
+                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
+                    },                    
+                ]
+            },
+            advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.'
         }
     },    
 ]

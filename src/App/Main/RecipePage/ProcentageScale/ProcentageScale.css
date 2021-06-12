@@ -1,13 +1,6 @@
-.procentage-scale {
-}
-
 .procentage-scale__info {
     display: flex;
     align-items: flex-end;
-}
-
-.procentage-scale__info-label {
-
 }
 
 .procentage-scale__info-value {
@@ -22,13 +15,11 @@
     margin-top: 10px;
     border: 1px solid silver;
     border-radius: var(--border-radius);
-    height: 30px;
+    height: 20px;
 }
 
 .procentage-scale__scale-value {
     height: 100%;
     background-color: var(--primary-color);
-    border-radius: var(--border-radius);
-    border: 0;
-    /* width: 65%; */
+    border-radius: var(--border-radius);    
 }

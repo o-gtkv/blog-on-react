@@ -1,9 +1,6 @@
 .recipe-page__content {
     display: flex;
     margin-top: -30px;
-    /* flex-wrap: wrap;    
-    flex-basis: 760px; */
-    /* margin-bottom: 30px; */
 }
 
 .recipe-page__content-main {
