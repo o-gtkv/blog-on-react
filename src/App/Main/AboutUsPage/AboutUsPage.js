@@ -8,7 +8,7 @@ import teamDB from '../../teamDB'
 const AboutUsPage = () => {
     return (
         <Fragment>
-            <img src="/img/home_diet_about1.jpg" alt="" />
+            <img src="/img/bg/about.jpg" alt="" />
             <div className="container">    
                 <div className="row">                
                     <div className="col-xs-8">                        
@@ -43,7 +43,7 @@ const AboutUsPage = () => {
                 </div>
                 <div className="row">
                     <div className="col-xs-12 text--align-center margin-bottom--md">
-                        <img src="/img/home_diet_about5.png" alt="" />
+                        <img src="/img/digits.png" alt="" />
                     </div>
                 </div>
                 <div className="row">

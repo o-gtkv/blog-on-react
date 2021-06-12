@@ -5,21 +5,21 @@ const RecipesList = ({recipesDB, category}) => {
     if (category === 'popular') {
         const maxCount = 6
         recipesDB = recipesDB.slice(0, Math.min(maxCount, recipesDB.length))
-    } else {
+    } else if (category !== 'all') {
         recipesDB = recipesDB.filter(recipe => recipe.category === category.toLowerCase())
-    }
+    }    
 
-    const itemsPerRow = 3    
+    const itemsPerRow = Math.min(recipesDB.length, 3)
     const itemsPerCol = Math.floor(recipesDB.length / itemsPerRow)
 
-    let k = 0;            
+    let k = 0;
     let h = recipesDB.length % itemsPerRow
 
     const recipesList = []
     for (let i = 0; i < itemsPerRow; ++i) {
         const recipes = []
         for (let j = 0; j < itemsPerCol; ++j) {
-            recipes.push(<RecipesCard key={recipesDB[k].id} {...recipesDB[k++]}  />)
+            recipes.push(<RecipesCard key={recipesDB[k].id} {...recipesDB[k++]} />)
             if (h-- > 0) {
                 recipes.push(<RecipesCard key={recipesDB[k].id} {...recipesDB[k++]} />)
             }
@@ -32,7 +32,7 @@ const RecipesList = ({recipesDB, category}) => {
     }
 
     return (
-        <div className="row">            
+        <div className="row">
             {recipesList}
         </div>
     )

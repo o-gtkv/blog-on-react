@@ -6,6 +6,7 @@ import AboutUsPage from './AboutUsPage/AboutUsPage'
 import ContactPage from './ContactPage/ContactPage'
 import RecipesPage from './RecipesPage/RecipesPage'
 import RecipePage from './RecipePage/RecipePage'
+import AllRecipesPage from './AllRecipesPage/AllRecipesPage'
 
 // import teamDB from '../teamDB'
 
@@ -21,8 +22,8 @@ const Main = ({recipesDB, articlesDB}) => {
             <Route exact path="/lunch" render={() => <RecipesPage category="Lunch" recipesDB={recipesDB} />} />
             <Route exact path="/dinner" render={() => <RecipesPage category="Dinner" recipesDB={recipesDB} />} />
             <Route exact path="/recipes/:id" 
-                   render={({match}) => <RecipePage recipesDB={recipesDB} match={match} comments={comments} newComment={newComment} />} 
-            />            
+                   render={({match}) => <RecipePage recipesDB={recipesDB} match={match} comments={comments} newComment={newComment} />} />            
+            <Route exact path="/all-recipes" render={() => <AllRecipesPage recipesDB={recipesDB} />} />
         </main>
     )
 }

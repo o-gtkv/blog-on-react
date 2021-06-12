@@ -6,7 +6,7 @@ import CenteredItemsContainer from '../../Components/CenteredItemsContainer/Cent
 const AboutUsSection = () => {
     return (
         <section>
-            <CenteredItemsContainer backgroundImage={"/img/home_diet_sectionbg3.jpg"} height={"800px"}>        
+            <CenteredItemsContainer backgroundImage="/img/bg/about_section.jpg" height="800px">        
                 <div className="container">
                     <div className="row">
                         <div className="col-xs-8">
