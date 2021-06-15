@@ -1,4 +1,5 @@
 import React from 'react'
+import { connect } from 'react-redux'
 
 import ArticleCard from './ArticleCard/ArticleCard'
 
@@ -32,4 +33,8 @@ const ArticleList = ({articlesDB}) => {
     )
 }
 
-export default ArticleList
+const mapStateToProps = (state) => ({
+    articlesDB: state.articlesState.articlesList
+})
+
+export default connect(mapStateToProps)(ArticleList)

@@ -3,32 +3,27 @@ import React, { Component } from 'react'
 import './SearchForm.css'
 
 class SearchForm extends Component {
-    constructor(props) {
-        super()        
-    }    
-
     state = {
         value: ''
     }
 
-    onChange = (e) => {
+    handleChange = (e) => {
         this.setState({value: e.target.value})
     }
 
-    onSublmit = (e) => {
+    handleSubmit = (e) => {
         e.preventDefault()
     }
 
     render() {
         return (
-            <form className={this.props.className + " search-form"} onSubmit={this.onSublmit}>
+            <form className={`search-form ${this.props.className}`} onSubmit={this.handleSubmit}>
                 <input 
                     className="search-form__control" 
                     type="text" 
                     value={this.state.value} 
                     placeholder="Enter your search" 
-                    onChange={this.onChange} 
-                />
+                    onChange={this.handleChange} />
             </form>
         )
     }

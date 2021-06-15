@@ -1,15 +1,14 @@
 import React from 'react'
-// import ArticleCard from './ArticlesList/ArticleCard/ArticleCard'
 import ArticlesList from './ArticlesList/ArticlesList'
 
 import './ArticlesSection.css'
 
-const ArticlesSection = ({articlesDB}) => {
+const ArticlesSection = () => {
     return (
         <section className="articles">
             <div className="container">
                 <div className="row">
-                    <ArticlesList articlesDB={articlesDB} />
+                    <ArticlesList />
                 </div>
             </div>
         </section>

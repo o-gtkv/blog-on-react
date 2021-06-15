@@ -4,7 +4,7 @@ import CenteredItemsContainer from '../Components/CenteredItemsContainer/Centere
 import RecipesList from '../Components/RecipesList/RecipeList'
 import Panel from '../RecipesPage/Panel/Panel'
 
-const AllRecipesPage = ({recipesDB}) => {
+const AllRecipesPage = () => {
     return (
         <Fragment>
             <CenteredItemsContainer backgroundImage="/img/home_diet_sectionbg4.jpg" height="200px">
@@ -13,11 +13,11 @@ const AllRecipesPage = ({recipesDB}) => {
             <div className="container">
                 <div className="row">
                     <div className="col-xs-12">
-                        <RecipesList category="all" recipesDB={recipesDB} />
+                        <RecipesList category="all" />
                     </div>
                 </div>
             </div>
-            <Panel className="margin-right--md margin-left--md" recipeDB={recipesDB} />
+            <Panel className="margin-right--md margin-left--md" />
         </Fragment>
     )
 }

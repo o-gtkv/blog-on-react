@@ -1,48 +1,50 @@
 const recipesDB = [
     {
         id: 1,        
+        authorID: 1,
         image: '/img/recipes/1.jpg',
         name: 'Phasellus sagittis eget',
         description: 'Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.',
         likes: 10,
         category: 'breakfast',
         date: '2021-05-07',
-        authorID: 1,
+        advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.', 
+        stat: [
+            {label: 'Aliquam erat ac', value: 50},
+            {label: 'Quisque lorem tortor', value: 70},
+            {label: 'Curabitur et ligula', value: 30}
+        ],
         fullDescription: {
-            content: 'Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.',
-            ingredients: [
-                '1 x lorem ipsum',
-                '200g sit amet',
-                '1,5l consectetur',
-                '1,5l consectetur',
-                '4 adipisicing',
-                'elit and tempor'
-            ],
+            content: '<p class="text">Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.</p>',
+            ingredients: 
+                `<ul class="ingredients-list">
+                    <li>1 x lorem ipsum</li>
+                    <li>200g sit amet</li>
+                    <li>1,5l consectetur</li>
+                    <li>1,5l consectetur</li>
+                    <li>4 adipisicing</li>
+                    <li>elit and tempor</li>
+                </ul>`,            
             preparation: {
-                text: 'Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.',
+                intro: '<p class="text">Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.</p>',
                 steps: [
-                    {
-                        img: '/img/preparation/step1.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                    `<img src="/img/preparation/step1.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 1</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step2.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                     `<img src="/img/preparation/step2.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 2</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step3.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 3</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step4.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },                    
-                ]
-            },
-            advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.'
+                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 4</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`
+                ]            
+            }
         }        
     },
 
@@ -55,42 +57,44 @@ const recipesDB = [
         category: 'breakfast',
         date: '2021-05-07',
         authorID: 1,
+        advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.', 
+        stat: [
+            {label: 'Aliquam erat ac', value: 50},
+            {label: 'Quisque lorem tortor', value: 70},
+            {label: 'Curabitur et ligula', value: 30}
+        ],
         fullDescription: {
-            content: 'Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.',
-            ingredients: [
-                '1 x lorem ipsum',
-                '200g sit amet',
-                '1,5l consectetur',
-                '1,5l consectetur',
-                '4 adipisicing',
-                'elit and tempor'
-            ],
+            content: '<p class="text">Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.</p>',
+            ingredients: 
+                `<ul class="ingredients-list">
+                    <li>1 x lorem ipsum</li>
+                    <li>200g sit amet</li>
+                    <li>1,5l consectetur</li>
+                    <li>1,5l consectetur</li>
+                    <li>4 adipisicing</li>
+                    <li>elit and tempor</li>
+                </ul>`,            
             preparation: {
-                text: 'Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.',
+                intro: '<p class="text">Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.</p>',
                 steps: [
-                    {
-                        img: '/img/preparation/step1.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                    `<img src="/img/preparation/step1.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 1</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step2.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                     `<img src="/img/preparation/step2.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 2</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step3.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 3</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step4.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },                    
-                ]
-            },
-            advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.'
-        }
+                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 4</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`
+                ]            
+            }
+        }        
     },
 
     {
@@ -102,42 +106,44 @@ const recipesDB = [
         category: 'breakfast',
         date: '2021-05-07',
         authorID: 1,
+        advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.', 
+        stat: [
+            {label: 'Aliquam erat ac', value: 50},
+            {label: 'Quisque lorem tortor', value: 70},
+            {label: 'Curabitur et ligula', value: 30}
+        ],
         fullDescription: {
-            content: 'Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.',
-            ingredients: [
-                '1 x lorem ipsum',
-                '200g sit amet',
-                '1,5l consectetur',
-                '1,5l consectetur',
-                '4 adipisicing',
-                'elit and tempor'
-            ],
+            content: '<p class="text">Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.</p>',
+            ingredients: 
+                `<ul class="ingredients-list">
+                    <li>1 x lorem ipsum</li>
+                    <li>200g sit amet</li>
+                    <li>1,5l consectetur</li>
+                    <li>1,5l consectetur</li>
+                    <li>4 adipisicing</li>
+                    <li>elit and tempor</li>
+                </ul>`,            
             preparation: {
-                text: 'Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.',
+                intro: '<p class="text">Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.</p>',
                 steps: [
-                    {
-                        img: '/img/preparation/step1.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                    `<img src="/img/preparation/step1.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 1</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step2.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                     `<img src="/img/preparation/step2.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 2</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step3.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 3</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step4.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },                    
-                ]
-            },
-            advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.'
-        }
+                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 4</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`
+                ]            
+            }
+        }        
     },
 
     {
@@ -149,42 +155,44 @@ const recipesDB = [
         category: 'breakfast',
         date: '2021-05-07',
         authorID: 1,
+        advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.', 
+        stat: [
+            {label: 'Aliquam erat ac', value: 50},
+            {label: 'Quisque lorem tortor', value: 70},
+            {label: 'Curabitur et ligula', value: 30}
+        ],
         fullDescription: {
-            content: 'Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.',
-            ingredients: [
-                '1 x lorem ipsum',
-                '200g sit amet',
-                '1,5l consectetur',
-                '1,5l consectetur',
-                '4 adipisicing',
-                'elit and tempor'
-            ],
+            content: '<p class="text">Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.</p>',
+            ingredients: 
+                `<ul class="ingredients-list">
+                    <li>1 x lorem ipsum</li>
+                    <li>200g sit amet</li>
+                    <li>1,5l consectetur</li>
+                    <li>1,5l consectetur</li>
+                    <li>4 adipisicing</li>
+                    <li>elit and tempor</li>
+                </ul>`,            
             preparation: {
-                text: 'Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.',
+                intro: '<p class="text">Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.</p>',
                 steps: [
-                    {
-                        img: '/img/preparation/step1.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                    `<img src="/img/preparation/step1.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 1</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step2.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                     `<img src="/img/preparation/step2.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 2</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step3.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 3</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step4.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },                    
-                ]
-            },
-            advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.'
-        }
+                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 4</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`
+                ]            
+            }
+        }        
     },
 
     {
@@ -196,42 +204,44 @@ const recipesDB = [
         category: 'breakfast',
         date: '2021-05-08',
         authorID: 1,
+        advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.', 
+        stat: [
+            {label: 'Aliquam erat ac', value: 50},
+            {label: 'Quisque lorem tortor', value: 70},
+            {label: 'Curabitur et ligula', value: 30}
+        ],
         fullDescription: {
-            content: 'Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.',
-            ingredients: [
-                '1 x lorem ipsum',
-                '200g sit amet',
-                '1,5l consectetur',
-                '1,5l consectetur',
-                '4 adipisicing',
-                'elit and tempor'
-            ],
+            content: '<p class="text">Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.</p>',
+            ingredients: 
+                `<ul class="ingredients-list">
+                    <li>1 x lorem ipsum</li>
+                    <li>200g sit amet</li>
+                    <li>1,5l consectetur</li>
+                    <li>1,5l consectetur</li>
+                    <li>4 adipisicing</li>
+                    <li>elit and tempor</li>
+                </ul>`,            
             preparation: {
-                text: 'Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.',
+                intro: '<p class="text">Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.</p>',
                 steps: [
-                    {
-                        img: '/img/preparation/step1.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                    `<img src="/img/preparation/step1.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 1</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step2.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                     `<img src="/img/preparation/step2.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 2</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step3.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 3</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step4.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },                    
-                ]
-            },
-            advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.'
-        }
+                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 4</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`
+                ]            
+            }
+        }        
     },
 
     {
@@ -243,42 +253,44 @@ const recipesDB = [
         category: 'breakfast',
         date: '2021-05-07',
         authorID: 1,
+        advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.', 
+        stat: [
+            {label: 'Aliquam erat ac', value: 50},
+            {label: 'Quisque lorem tortor', value: 70},
+            {label: 'Curabitur et ligula', value: 30}
+        ],
         fullDescription: {
-            content: 'Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.',
-            ingredients: [
-                '1 x lorem ipsum',
-                '200g sit amet',
-                '1,5l consectetur',
-                '1,5l consectetur',
-                '4 adipisicing',
-                'elit and tempor'
-            ],
+            content: '<p class="text">Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.</p>',
+            ingredients: 
+                `<ul class="ingredients-list">
+                    <li>1 x lorem ipsum</li>
+                    <li>200g sit amet</li>
+                    <li>1,5l consectetur</li>
+                    <li>1,5l consectetur</li>
+                    <li>4 adipisicing</li>
+                    <li>elit and tempor</li>
+                </ul>`,            
             preparation: {
-                text: 'Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.',
+                intro: '<p class="text">Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.</p>',
                 steps: [
-                    {
-                        img: '/img/preparation/step1.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                    `<img src="/img/preparation/step1.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 1</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step2.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                     `<img src="/img/preparation/step2.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 2</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step3.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 3</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step4.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },                    
-                ]
-            },
-            advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.'
-        }
+                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 4</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`
+                ]            
+            }
+        }        
     },    
 
     {
@@ -290,42 +302,44 @@ const recipesDB = [
         category: 'lunch',
         date: '2021-05-07',
         authorID: 1,
+        advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.', 
+        stat: [
+            {label: 'Aliquam erat ac', value: 50},
+            {label: 'Quisque lorem tortor', value: 70},
+            {label: 'Curabitur et ligula', value: 30}
+        ],
         fullDescription: {
-            content: 'Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.',
-            ingredients: [
-                '1 x lorem ipsum',
-                '200g sit amet',
-                '1,5l consectetur',
-                '1,5l consectetur',
-                '4 adipisicing',
-                'elit and tempor'
-            ],
+            content: '<p class="text">Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.</p>',
+            ingredients: 
+                `<ul class="ingredients-list">
+                    <li>1 x lorem ipsum</li>
+                    <li>200g sit amet</li>
+                    <li>1,5l consectetur</li>
+                    <li>1,5l consectetur</li>
+                    <li>4 adipisicing</li>
+                    <li>elit and tempor</li>
+                </ul>`,            
             preparation: {
-                text: 'Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.',
+                intro: '<p class="text">Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.</p>',
                 steps: [
-                    {
-                        img: '/img/preparation/step1.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                    `<img src="/img/preparation/step1.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 1</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step2.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                     `<img src="/img/preparation/step2.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 2</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step3.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 3</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step4.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },                    
-                ]
-            },
-            advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.'
-        }
+                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 4</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`
+                ]            
+            }
+        }        
     },    
 
     {
@@ -337,42 +351,44 @@ const recipesDB = [
         category: 'lunch',
         date: '2021-05-07',
         authorID: 1,
+        advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.', 
+        stat: [
+            {label: 'Aliquam erat ac', value: 50},
+            {label: 'Quisque lorem tortor', value: 70},
+            {label: 'Curabitur et ligula', value: 30}
+        ],
         fullDescription: {
-            content: 'Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.',
-            ingredients: [
-                '1 x lorem ipsum',
-                '200g sit amet',
-                '1,5l consectetur',
-                '1,5l consectetur',
-                '4 adipisicing',
-                'elit and tempor'
-            ],
+            content: '<p class="text">Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.</p>',
+            ingredients: 
+                `<ul class="ingredients-list">
+                    <li>1 x lorem ipsum</li>
+                    <li>200g sit amet</li>
+                    <li>1,5l consectetur</li>
+                    <li>1,5l consectetur</li>
+                    <li>4 adipisicing</li>
+                    <li>elit and tempor</li>
+                </ul>`,            
             preparation: {
-                text: 'Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.',
+                intro: '<p class="text">Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.</p>',
                 steps: [
-                    {
-                        img: '/img/preparation/step1.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                    `<img src="/img/preparation/step1.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 1</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step2.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                     `<img src="/img/preparation/step2.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 2</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step3.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 3</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step4.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },                    
-                ]
-            },
-            advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.'
-        }
+                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 4</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`
+                ]            
+            }
+        }        
     },    
 
     {
@@ -384,42 +400,44 @@ const recipesDB = [
         category: 'lunch',
         date: '2021-05-07',
         authorID: 1,
+        advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.', 
+        stat: [
+            {label: 'Aliquam erat ac', value: 50},
+            {label: 'Quisque lorem tortor', value: 70},
+            {label: 'Curabitur et ligula', value: 30}
+        ],
         fullDescription: {
-            content: 'Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.',
-            ingredients: [
-                '1 x lorem ipsum',
-                '200g sit amet',
-                '1,5l consectetur',
-                '1,5l consectetur',
-                '4 adipisicing',
-                'elit and tempor'
-            ],
+            content: '<p class="text">Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.</p>',
+            ingredients: 
+                `<ul class="ingredients-list">
+                    <li>1 x lorem ipsum</li>
+                    <li>200g sit amet</li>
+                    <li>1,5l consectetur</li>
+                    <li>1,5l consectetur</li>
+                    <li>4 adipisicing</li>
+                    <li>elit and tempor</li>
+                </ul>`,            
             preparation: {
-                text: 'Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.',
+                intro: '<p class="text">Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.</p>',
                 steps: [
-                    {
-                        img: '/img/preparation/step1.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                    `<img src="/img/preparation/step1.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 1</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step2.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                     `<img src="/img/preparation/step2.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 2</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step3.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 3</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step4.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },                    
-                ]
-            },
-            advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.'
-        }
+                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 4</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`
+                ]            
+            }
+        }        
     },    
 
     {
@@ -431,42 +449,44 @@ const recipesDB = [
         category: 'lunch',
         date: '2021-05-07',
         authorID: 1,
+        advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.', 
+        stat: [
+            {label: 'Aliquam erat ac', value: 50},
+            {label: 'Quisque lorem tortor', value: 70},
+            {label: 'Curabitur et ligula', value: 30}
+        ],
         fullDescription: {
-            content: 'Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.',
-            ingredients: [
-                '1 x lorem ipsum',
-                '200g sit amet',
-                '1,5l consectetur',
-                '1,5l consectetur',
-                '4 adipisicing',
-                'elit and tempor'
-            ],
+            content: '<p class="text">Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.</p>',
+            ingredients: 
+                `<ul class="ingredients-list">
+                    <li>1 x lorem ipsum</li>
+                    <li>200g sit amet</li>
+                    <li>1,5l consectetur</li>
+                    <li>1,5l consectetur</li>
+                    <li>4 adipisicing</li>
+                    <li>elit and tempor</li>
+                </ul>`,            
             preparation: {
-                text: 'Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.',
+                intro: '<p class="text">Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.</p>',
                 steps: [
-                    {
-                        img: '/img/preparation/step1.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                    `<img src="/img/preparation/step1.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 1</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step2.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                     `<img src="/img/preparation/step2.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 2</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step3.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 3</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step4.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },                    
-                ]
-            },
-            advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.'
-        }
+                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 4</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`
+                ]            
+            }
+        }        
     },        
 
     {
@@ -478,42 +498,44 @@ const recipesDB = [
         category: 'lunch',
         date: '2021-05-07',
         authorID: 1,
+        advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.', 
+        stat: [
+            {label: 'Aliquam erat ac', value: 50},
+            {label: 'Quisque lorem tortor', value: 70},
+            {label: 'Curabitur et ligula', value: 30}
+        ],
         fullDescription: {
-            content: 'Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.',
-            ingredients: [
-                '1 x lorem ipsum',
-                '200g sit amet',
-                '1,5l consectetur',
-                '1,5l consectetur',
-                '4 adipisicing',
-                'elit and tempor'
-            ],
+            content: '<p class="text">Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.</p>',
+            ingredients: 
+                `<ul class="ingredients-list">
+                    <li>1 x lorem ipsum</li>
+                    <li>200g sit amet</li>
+                    <li>1,5l consectetur</li>
+                    <li>1,5l consectetur</li>
+                    <li>4 adipisicing</li>
+                    <li>elit and tempor</li>
+                </ul>`,            
             preparation: {
-                text: 'Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.',
+                intro: '<p class="text">Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.</p>',
                 steps: [
-                    {
-                        img: '/img/preparation/step1.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                    `<img src="/img/preparation/step1.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 1</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step2.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                     `<img src="/img/preparation/step2.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 2</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step3.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 3</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step4.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },                    
-                ]
-            },
-            advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.'
-        }
+                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 4</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`
+                ]            
+            }
+        }        
     },        
 
     {
@@ -525,42 +547,44 @@ const recipesDB = [
         category: 'lunch',
         date: '2021-05-07',
         authorID: 1,
+        advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.', 
+        stat: [
+            {label: 'Aliquam erat ac', value: 50},
+            {label: 'Quisque lorem tortor', value: 70},
+            {label: 'Curabitur et ligula', value: 30}
+        ],
         fullDescription: {
-            content: 'Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.',
-            ingredients: [
-                '1 x lorem ipsum',
-                '200g sit amet',
-                '1,5l consectetur',
-                '1,5l consectetur',
-                '4 adipisicing',
-                'elit and tempor'
-            ],
+            content: '<p class="text">Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.</p>',
+            ingredients: 
+                `<ul class="ingredients-list">
+                    <li>1 x lorem ipsum</li>
+                    <li>200g sit amet</li>
+                    <li>1,5l consectetur</li>
+                    <li>1,5l consectetur</li>
+                    <li>4 adipisicing</li>
+                    <li>elit and tempor</li>
+                </ul>`,            
             preparation: {
-                text: 'Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.',
+                intro: '<p class="text">Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.</p>',
                 steps: [
-                    {
-                        img: '/img/preparation/step1.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                    `<img src="/img/preparation/step1.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 1</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step2.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                     `<img src="/img/preparation/step2.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 2</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step3.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 3</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step4.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },                    
-                ]
-            },
-            advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.'
-        }
+                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 4</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`
+                ]            
+            }
+        }        
     },
 
     {
@@ -572,42 +596,44 @@ const recipesDB = [
         category: 'dinner',
         date: '2021-05-07',
         authorID: 1,
+        advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.', 
+        stat: [
+            {label: 'Aliquam erat ac', value: 50},
+            {label: 'Quisque lorem tortor', value: 70},
+            {label: 'Curabitur et ligula', value: 30}
+        ],
         fullDescription: {
-            content: 'Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.',
-            ingredients: [
-                '1 x lorem ipsum',
-                '200g sit amet',
-                '1,5l consectetur',
-                '1,5l consectetur',
-                '4 adipisicing',
-                'elit and tempor'
-            ],
+            content: '<p class="text">Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.</p>',
+            ingredients: 
+                `<ul class="ingredients-list">
+                    <li>1 x lorem ipsum</li>
+                    <li>200g sit amet</li>
+                    <li>1,5l consectetur</li>
+                    <li>1,5l consectetur</li>
+                    <li>4 adipisicing</li>
+                    <li>elit and tempor</li>
+                </ul>`,            
             preparation: {
-                text: 'Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.',
+                intro: '<p class="text">Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.</p>',
                 steps: [
-                    {
-                        img: '/img/preparation/step1.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                    `<img src="/img/preparation/step1.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 1</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step2.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                     `<img src="/img/preparation/step2.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 2</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step3.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 3</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step4.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },                    
-                ]
-            },
-            advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.'
-        }
+                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 4</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`
+                ]            
+            }
+        }        
     },
 
     {
@@ -619,42 +645,44 @@ const recipesDB = [
         category: 'dinner',
         date: '2021-05-07',
         authorID: 1,
+        advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.', 
+        stat: [
+            {label: 'Aliquam erat ac', value: 50},
+            {label: 'Quisque lorem tortor', value: 70},
+            {label: 'Curabitur et ligula', value: 30}
+        ],
         fullDescription: {
-            content: 'Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.',
-            ingredients: [
-                '1 x lorem ipsum',
-                '200g sit amet',
-                '1,5l consectetur',
-                '1,5l consectetur',
-                '4 adipisicing',
-                'elit and tempor'
-            ],
+            content: '<p class="text">Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.</p>',
+            ingredients: 
+                `<ul class="ingredients-list">
+                    <li>1 x lorem ipsum</li>
+                    <li>200g sit amet</li>
+                    <li>1,5l consectetur</li>
+                    <li>1,5l consectetur</li>
+                    <li>4 adipisicing</li>
+                    <li>elit and tempor</li>
+                </ul>`,            
             preparation: {
-                text: 'Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.',
+                intro: '<p class="text">Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.</p>',
                 steps: [
-                    {
-                        img: '/img/preparation/step1.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                    `<img src="/img/preparation/step1.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 1</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step2.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                     `<img src="/img/preparation/step2.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 2</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step3.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 3</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step4.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },                    
-                ]
-            },
-            advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.'
-        }
+                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 4</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`
+                ]            
+            }
+        }        
     },
 
     {
@@ -666,42 +694,44 @@ const recipesDB = [
         category: 'dinner',
         date: '2021-05-07',
         authorID: 1,
+        advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.', 
+        stat: [
+            {label: 'Aliquam erat ac', value: 50},
+            {label: 'Quisque lorem tortor', value: 70},
+            {label: 'Curabitur et ligula', value: 30}
+        ],
         fullDescription: {
-            content: 'Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.',
-            ingredients: [
-                '1 x lorem ipsum',
-                '200g sit amet',
-                '1,5l consectetur',
-                '1,5l consectetur',
-                '4 adipisicing',
-                'elit and tempor'
-            ],
+            content: '<p class="text">Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.</p>',
+            ingredients: 
+                `<ul class="ingredients-list">
+                    <li>1 x lorem ipsum</li>
+                    <li>200g sit amet</li>
+                    <li>1,5l consectetur</li>
+                    <li>1,5l consectetur</li>
+                    <li>4 adipisicing</li>
+                    <li>elit and tempor</li>
+                </ul>`,            
             preparation: {
-                text: 'Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.',
+                intro: '<p class="text">Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.</p>',
                 steps: [
-                    {
-                        img: '/img/preparation/step1.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                    `<img src="/img/preparation/step1.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 1</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step2.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                     `<img src="/img/preparation/step2.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 2</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step3.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 3</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step4.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },                    
-                ]
-            },
-            advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.'
-        }
+                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 4</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`
+                ]            
+            }
+        }        
     },
 
     {
@@ -713,42 +743,44 @@ const recipesDB = [
         category: 'dinner',
         date: '2021-05-07',
         authorID: 1,
+        advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.', 
+        stat: [
+            {label: 'Aliquam erat ac', value: 50},
+            {label: 'Quisque lorem tortor', value: 70},
+            {label: 'Curabitur et ligula', value: 30}
+        ],
         fullDescription: {
-            content: 'Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.',
-            ingredients: [
-                '1 x lorem ipsum',
-                '200g sit amet',
-                '1,5l consectetur',
-                '1,5l consectetur',
-                '4 adipisicing',
-                'elit and tempor'
-            ],
+            content: '<p class="text">Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.</p>',
+            ingredients: 
+                `<ul class="ingredients-list">
+                    <li>1 x lorem ipsum</li>
+                    <li>200g sit amet</li>
+                    <li>1,5l consectetur</li>
+                    <li>1,5l consectetur</li>
+                    <li>4 adipisicing</li>
+                    <li>elit and tempor</li>
+                </ul>`,            
             preparation: {
-                text: 'Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.',
+                intro: '<p class="text">Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.</p>',
                 steps: [
-                    {
-                        img: '/img/preparation/step1.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                    `<img src="/img/preparation/step1.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 1</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step2.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                     `<img src="/img/preparation/step2.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 2</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step3.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 3</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step4.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },                    
-                ]
-            },
-            advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.'
-        }
+                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 4</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`
+                ]            
+            }
+        }        
     },
 
     {
@@ -760,42 +792,44 @@ const recipesDB = [
         category: 'dinner',
         date: '2021-05-07',
         authorID: 1,
+        advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.', 
+        stat: [
+            {label: 'Aliquam erat ac', value: 50},
+            {label: 'Quisque lorem tortor', value: 70},
+            {label: 'Curabitur et ligula', value: 30}
+        ],
         fullDescription: {
-            content: 'Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.',
-            ingredients: [
-                '1 x lorem ipsum',
-                '200g sit amet',
-                '1,5l consectetur',
-                '1,5l consectetur',
-                '4 adipisicing',
-                'elit and tempor'
-            ],
+            content: '<p class="text">Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.</p>',
+            ingredients: 
+                `<ul class="ingredients-list">
+                    <li>1 x lorem ipsum</li>
+                    <li>200g sit amet</li>
+                    <li>1,5l consectetur</li>
+                    <li>1,5l consectetur</li>
+                    <li>4 adipisicing</li>
+                    <li>elit and tempor</li>
+                </ul>`,            
             preparation: {
-                text: 'Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.',
+                intro: '<p class="text">Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.</p>',
                 steps: [
-                    {
-                        img: '/img/preparation/step1.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                    `<img src="/img/preparation/step1.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 1</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step2.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                     `<img src="/img/preparation/step2.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 2</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step3.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 3</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step4.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },                    
-                ]
-            },
-            advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.'
-        }
+                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 4</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`
+                ]            
+            }
+        }        
     },    
 
     {
@@ -807,42 +841,44 @@ const recipesDB = [
         category: 'dinner',
         date: '2021-05-07',
         authorID: 1,
+        advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.', 
+        stat: [
+            {label: 'Aliquam erat ac', value: 50},
+            {label: 'Quisque lorem tortor', value: 70},
+            {label: 'Curabitur et ligula', value: 30}
+        ],
         fullDescription: {
-            content: 'Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.',
-            ingredients: [
-                '1 x lorem ipsum',
-                '200g sit amet',
-                '1,5l consectetur',
-                '1,5l consectetur',
-                '4 adipisicing',
-                'elit and tempor'
-            ],
+            content: '<p class="text">Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante. Integer magna purus, commodo in diam nec, pretium auctor sapien. In pulvinar, ipsum eu dignissim facilisis, massa justo varius purus, non dictum elit nibh ut massa. Nam massa erat, aliquet a rutrum eu, sagittis ac nibh. Pellentesque velit dolor, suscipit in ligula a, suscipit rhoncus dui.</p>',
+            ingredients: 
+                `<ul class="ingredients-list">
+                    <li>1 x lorem ipsum</li>
+                    <li>200g sit amet</li>
+                    <li>1,5l consectetur</li>
+                    <li>1,5l consectetur</li>
+                    <li>4 adipisicing</li>
+                    <li>elit and tempor</li>
+                </ul>`,            
             preparation: {
-                text: 'Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.',
+                intro: '<p class="text">Vivamus in diam turpis. In condimentum maximus tristique. Maecenas non laoreet odio. Fusce lobortis porttitor purus, vel vestibulum libero pharetra vel.</p>',
                 steps: [
-                    {
-                        img: '/img/preparation/step1.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                    `<img src="/img/preparation/step1.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 1</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step2.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                     `<img src="/img/preparation/step2.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 2</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step3.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },
+                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 3</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                    {
-                        img: '/img/preparation/step4.jpg',
-                        desc: 'Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit.'
-                    },                    
-                ]
-            },
-            advice: 'Donec sodales, neque vitae rutrum convallis, nulla tortor pharetra odio, in varius ante ante sed nisi.'
-        }
+                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     <h4 class="text--color-primary margin-top--md">Step 4</h4>
+                     <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`
+                ]            
+            }
+        }        
     },    
 ]
 

@@ -3,7 +3,7 @@ import RecipesList from '../../Components/RecipesList/RecipeList'
 
 import './PopularRecipesSection.css'
 
-const PopularRecipesSection = ({recipesDB}) => {
+const PopularRecipesSection = () => {
     return (
         <section className="popular-recipes">
             <div className="container">
@@ -14,7 +14,7 @@ const PopularRecipesSection = ({recipesDB}) => {
                         </div>
                     </div>                    
                 </div>                                
-                <RecipesList recipesDB={recipesDB} category={'popular'} />                    
+                <RecipesList category={'popular'} />                    
             </div>
         </section>
     )

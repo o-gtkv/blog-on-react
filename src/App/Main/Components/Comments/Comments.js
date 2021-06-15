@@ -3,34 +3,30 @@ import { useState } from 'react'
 
 import './Comments.css'
 
-function addComment(comments, id, name, text) {
+function addComment(comments, id, commentFormState) {
     if (!comments[id]) {
         comments[id] = []
     }
-    comments[id].push({
-        name,
-        text
-    })  
+    comments[id].push(commentFormState)
     return comments
 }
 
-const Comments = ({className, id, comments, newComment}) => {            
-    const [nameValue, setNameValue] = useState('')
-    const [messageValue, setMessageValue] = useState('')    
+const Comments = ({className, id, comments, handleAddComment}) => {            
+    const initCommentFormState = {name: '', msg: ''}
+    const [commentFormState, setCommentFormState] = useState(initCommentFormState)
 
-    const onSend = (event) => {
-        event.preventDefault()
-        newComment(addComment(comments, id, nameValue, messageValue))
-        setNameValue('')
-        setMessageValue('')
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        handleAddComment(addComment(comments, id, commentFormState))
+        setCommentFormState(initCommentFormState)
     }
 
-    const onNameValueChange = (event) => {
-        setNameValue(event.target.value)
+    const handleNameChange = (e) => {
+        setCommentFormState({...commentFormState, name: e.target.value})
     }
 
-    const onMessageValueChange = (event) =>{
-        setMessageValue(event.target.value)
+    const handleMessageChange = (e) =>{
+        setCommentFormState({...commentFormState, msg: e.target.value})
     }
 
     return (  
@@ -47,8 +43,8 @@ const Comments = ({className, id, comments, newComment}) => {
                         if (comments[id]) {
                             return comments[id].map((comment, i) => (
                                 <div  className="comments-list__item" key={i}>
-                                    <div style={{lineHeight: '20px'}}>{(new Date()).toDateString() + ' from ' + comment.name}</div>
-                                    <div>{comment.text}</div>
+                                    <div style={{lineHeight: '20px'}}>{`${(new Date()).toDateString()} from ${comment.name}`}</div>
+                                    <div>{comment.msg}</div>
                                 </div>
                             ))
                         }
@@ -56,14 +52,14 @@ const Comments = ({className, id, comments, newComment}) => {
                     })()
                 }   
             </div>
-            <form className={'form ' + className ? className : '' }>
+            <form className={`form ${className}`}>
                 <div className="row">
                     <div className="col-xs-12 col-md-3">
                         <input 
                             className="form__control" 
                             type="text" 
-                            value={nameValue} 
-                            onChange={onNameValueChange} 
+                            value={commentFormState.name} 
+                            onChange={handleNameChange} 
                             placeholder="Your name" 
                         />
                     </div>
@@ -73,8 +69,8 @@ const Comments = ({className, id, comments, newComment}) => {
                         <textarea 
                             className="form__control" 
                             rows="10" 
-                            value={messageValue} 
-                            onChange={onMessageValueChange} 
+                            value={commentFormState.msg} 
+                            onChange={handleMessageChange} 
                             placeholder="Message"
                         />
                     </div>
@@ -84,9 +80,9 @@ const Comments = ({className, id, comments, newComment}) => {
                         <input 
                             className="btn form__control" 
                             type="submit" 
-                            onClick={onSend} 
+                            onClick={handleSubmit} 
                             value="Send" 
-                            disabled={nameValue === '' || messageValue === ''}
+                            disabled={commentFormState.name === '' || commentFormState.msg === ''}
                         />
                     </div>
                 </div>                            

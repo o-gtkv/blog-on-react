@@ -1,7 +1,8 @@
 import React from 'react'
+import { connect } from 'react-redux'
 import RecipesCard from './RecipesCard/RecipesCard'
 
-const RecipesList = ({recipesDB, category}) => {
+const RecipesList = ({recipesDB, category}) => {    
     if (category === 'popular') {
         const maxCount = 6
         recipesDB = recipesDB.slice(0, Math.min(maxCount, recipesDB.length))
@@ -38,5 +39,7 @@ const RecipesList = ({recipesDB, category}) => {
     )
 }
 
-export default RecipesList
+const mapStateToProps = (state) => ({recipesDB: state.recipesState.recipesList})
+
+export default connect(mapStateToProps)(RecipesList)
 
