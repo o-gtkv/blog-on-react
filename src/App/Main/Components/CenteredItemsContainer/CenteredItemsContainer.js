@@ -7,7 +7,7 @@ const CenteredItemsContainer = ({backgroundImage, height, children}) => {
         justifyContent: 'center',
         alignItems: 'center',        
         textAlign: 'center',
-        height: height,
+        minHeight: height,
         backgroundImage: `url(${backgroundImage})`,
         backgroundAttachment: 'fixed',      
         backgroundRepeat: 'no-repeat'  ,

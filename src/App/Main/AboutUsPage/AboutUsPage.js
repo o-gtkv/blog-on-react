@@ -2,10 +2,12 @@ import React, { Fragment } from 'react'
 
 import TeamMemberCard from '../Components/TeamMemberCard/TeamMemberCard'
 import AllRecipesLink from '../Components/AllRecipesLink/AllRecipesLink'
+import { connect } from 'react-redux'
 
-import teamDB from '../../teamDB'
+const AboutUsPage = ({teamDB}) => {
+    if (teamDB.length === 0)
+        return null
 
-const AboutUsPage = () => {
     return (
         <Fragment>
             <img src="/img/bg/about.jpg" alt="" />
@@ -15,10 +17,10 @@ const AboutUsPage = () => {
                         <h5 className="text--color-primary text--align-center margin-top--md">About us</h5>
                         <div className="text--align-center margin-top--md">
                             <h2 className="margin-bottom--lg">
-                                Aliquam ac dui vel dui vulputate consectetur. Mauris accumsan, massa non consectetur condimentum, 
-                                diam arcu tristique nibh, nec egestas diam elit at nulla. Suspendisse potenti. In non lacinia risus, 
+                                Aliquam ac dui vel dui vulputate consectetur. Mauris accumsan, massa non consectetur condimentum,
+                                diam arcu tristique nibh, nec egestas diam elit at nulla. Suspendisse potenti. In non lacinia risus,
                                 ac tempor ipsum. Phasellus venenatis leo eu semper varius.
-                            </h2>                        
+                            </h2>
                         </div>
                     </div>
                 </div>
@@ -35,10 +37,10 @@ const AboutUsPage = () => {
                             </div>
                         ))
                     }
-                </div>                
+                </div>
                 <div className="row">
                     <div className="col-xs-12">
-                        <h5 className="text--color-primary text--align-center margin-bottom--md margin-top--lg">Our mission</h5>                        
+                        <h5 className="text--color-primary text--align-center margin-bottom--md margin-top--lg">Our mission</h5>                  
                     </div>
                 </div>
                 <div className="row">
@@ -59,4 +61,8 @@ const AboutUsPage = () => {
     )
 }
 
-export default AboutUsPage
+const mapStateToProps = (state) => ({
+    teamDB: state.teamState.teamList
+})
+
+export default connect(mapStateToProps)(AboutUsPage)

@@ -8,21 +8,19 @@ import Comments from '../Components/Comments/Comments'
 import TeamMemberCard from '../Components/TeamMemberCard/TeamMemberCard'
 import ProcentageScale from './ProcentageScale/ProcentageScale'
 
-import teamDB from '../../teamDB'
-
 import './RecipePage.css'
 
-const RecipePage = ({recipesDB, match, comments, handleAddComment}) => {
-    if (recipesDB.length === 0)
+const RecipePage = ({recipesDB, teamDB, match, comments, handleAddComment}) => {
+    if (recipesDB.length === 0 || teamDB.length === 0)
         return null
 
     const {
-        id, 
-        authorID, 
-        advice, 
-        image, 
-        name, 
-        stat, 
+        id,
+        authorID,
+        advice,
+        image,
+        name,
+        stat,
         fullDescription
     } = {...recipesDB.find(recipe => recipe.id === Number(match.params.id))}
 
@@ -101,6 +99,9 @@ const RecipePage = ({recipesDB, match, comments, handleAddComment}) => {
     )
 }
 
-const mapStateToProps = (state) => ({recipesDB: state.recipesState.recipesList})
+const mapStateToProps = (state) => ({
+    recipesDB: state.recipesState.recipesList,
+    teamDB: state.teamState.teamList
+})
 
 export default connect(mapStateToProps)(RecipePage)

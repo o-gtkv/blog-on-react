@@ -6,6 +6,15 @@ import { Link } from 'react-router-dom'
 import './Menu.css'
 
 class Menu extends Component {  
+    menuItems = [
+        {name: 'Home', link: '/'},
+        {name: 'About us', link: '/about-us'},
+        {name: 'Breakfast', link: '/breakfast'},        
+        {name: 'Lunch', link: '/lunch'},
+        {name: 'Dinner', link: '/dinner'},
+        {name: 'Contact', link: '/contact'}
+    ]
+
     toggleMenuBar = () => {
         const menuBar = document.querySelector('.menu-bar')        
         if (menuBar.classList.contains('visible-elem')) {
@@ -19,28 +28,14 @@ class Menu extends Component {
         return (    
             <Fragment>
                 <div className="menu-bar">
-                    <ul className="menu">
-                        <li onClick={this.toggleMenuBar} className="menu__item">
-                            <Link className="menu__item-link" to="/">Home</Link>
-                        </li>
-                        <li onClick={this.toggleMenuBar} className="menu__item">
-                            <Link className="menu__item-link" to="/about-us">About us</Link>
-                        </li>
-                        {/* <li onClick={this.toggleMenuBar} className="menu__item">
-                            <Link className="menu__item-link" to="/diets">Diets</Link>
-                        </li> */}
-                        <li onClick={this.toggleMenuBar} className="menu__item">
-                            <Link className="menu__item-link" to="/breakfast">Breakfast</Link>
-                        </li>
-                        <li onClick={this.toggleMenuBar} className="menu__item">
-                            <Link className="menu__item-link" to="/lunch">Lunch</Link>
-                        </li>
-                        <li onClick={this.toggleMenuBar} className="menu__item">
-                            <Link className="menu__item-link" to="/dinner">Dinner</Link>
-                        </li>
-                        <li onClick={this.toggleMenuBar} className="menu__item">
-                            <Link className="menu__item-link" to="/contact">Contact</Link>
-                        </li>
+                    <ul className="menu">                         
+                        {
+                            this.menuItems.map((menuItem, i) => (
+                                <li className="menu__item" key={i} onClick={this.toggleMenuBar}>
+                                    <Link className="menu__item-link" to={menuItem.link}>{menuItem.name}</Link>
+                                </li>
+                            ))
+                        }                                                    
                     </ul>                        
                 </div>
                 <div onClick={this.toggleMenuBar} className="mobile-menu">                

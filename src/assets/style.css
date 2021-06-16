@@ -15,7 +15,7 @@
 body {
     margin: 0 auto;
     max-width: 1900px;
-    font-family: Eczar, serif;
+    font-family: Cardo, serif;
     background-color: #f1f1f5;
 }
 
@@ -86,14 +86,6 @@ h5 {
 
 .text--color-primary {
     color: var(--primary-color);
-}
-
-.centered-item-stack {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;    
-    align-items: center;    
-    text-align: center;        
 }
 
 .slide-img {
@@ -169,27 +161,20 @@ h5 {
 }
 
 .slide-text {
+    margin: 0 15%;
     font-size: 60px;
     font-family: Eczar, sans-serif;
     color: white;
-    line-height: 5rem;
-}
-
-.recipes-card__action-button {
-    transition: 0.2s ease-in-out;    
-}
-
-.recipes-card__action-button:hover {
-    background-color: white;
-}
-
-.recipes-card__action-button:hover > i {
-    color: var(--primary-color);
 }
 
 .line {    
     border-bottom: 1px solid;
     width: 150px;
+}
+
+.line--justify-center {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .line--width-bold {
@@ -246,7 +231,6 @@ h5 {
 
 @media (max-width: 600px) {
     .slide-text {
-        font-size: 30px;
-        line-height: 2.5rem;
+        font-size: 30px;        
     }
 }

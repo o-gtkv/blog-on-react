@@ -40,7 +40,7 @@ const recipesDB = [
                      <h4 class="text--color-primary margin-top--md">Step 3</h4>
                      <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     `<img src="/img/preparation/step4.jpg" alt="" />
                      <h4 class="text--color-primary margin-top--md">Step 4</h4>
                      <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`
                 ]            
@@ -89,7 +89,7 @@ const recipesDB = [
                      <h4 class="text--color-primary margin-top--md">Step 3</h4>
                      <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     `<img src="/img/preparation/step4.jpg" alt="" />
                      <h4 class="text--color-primary margin-top--md">Step 4</h4>
                      <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`
                 ]            
@@ -138,7 +138,7 @@ const recipesDB = [
                      <h4 class="text--color-primary margin-top--md">Step 3</h4>
                      <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     `<img src="/img/preparation/step4.jpg" alt="" />
                      <h4 class="text--color-primary margin-top--md">Step 4</h4>
                      <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`
                 ]            
@@ -187,7 +187,7 @@ const recipesDB = [
                      <h4 class="text--color-primary margin-top--md">Step 3</h4>
                      <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     `<img src="/img/preparation/step4.jpg" alt="" />
                      <h4 class="text--color-primary margin-top--md">Step 4</h4>
                      <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`
                 ]            
@@ -236,7 +236,7 @@ const recipesDB = [
                      <h4 class="text--color-primary margin-top--md">Step 3</h4>
                      <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     `<img src="/img/preparation/step4.jpg" alt="" />
                      <h4 class="text--color-primary margin-top--md">Step 4</h4>
                      <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`
                 ]            
@@ -285,7 +285,7 @@ const recipesDB = [
                      <h4 class="text--color-primary margin-top--md">Step 3</h4>
                      <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     `<img src="/img/preparation/step4.jpg" alt="" />
                      <h4 class="text--color-primary margin-top--md">Step 4</h4>
                      <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`
                 ]            
@@ -334,7 +334,7 @@ const recipesDB = [
                      <h4 class="text--color-primary margin-top--md">Step 3</h4>
                      <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     `<img src="/img/preparation/step4.jpg" alt="" />
                      <h4 class="text--color-primary margin-top--md">Step 4</h4>
                      <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`
                 ]            
@@ -383,7 +383,7 @@ const recipesDB = [
                      <h4 class="text--color-primary margin-top--md">Step 3</h4>
                      <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     `<img src="/img/preparation/step4.jpg" alt="" />
                      <h4 class="text--color-primary margin-top--md">Step 4</h4>
                      <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`
                 ]            
@@ -432,7 +432,7 @@ const recipesDB = [
                      <h4 class="text--color-primary margin-top--md">Step 3</h4>
                      <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     `<img src="/img/preparation/step4.jpg" alt="" />
                      <h4 class="text--color-primary margin-top--md">Step 4</h4>
                      <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`
                 ]            
@@ -481,7 +481,7 @@ const recipesDB = [
                      <h4 class="text--color-primary margin-top--md">Step 3</h4>
                      <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     `<img src="/img/preparation/step4.jpg" alt="" />
                      <h4 class="text--color-primary margin-top--md">Step 4</h4>
                      <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`
                 ]            
@@ -530,7 +530,7 @@ const recipesDB = [
                      <h4 class="text--color-primary margin-top--md">Step 3</h4>
                      <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     `<img src="/img/preparation/step4.jpg" alt="" />
                      <h4 class="text--color-primary margin-top--md">Step 4</h4>
                      <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`
                 ]            
@@ -579,7 +579,7 @@ const recipesDB = [
                      <h4 class="text--color-primary margin-top--md">Step 3</h4>
                      <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     `<img src="/img/preparation/step4.jpg" alt="" />
                      <h4 class="text--color-primary margin-top--md">Step 4</h4>
                      <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`
                 ]            
@@ -628,7 +628,7 @@ const recipesDB = [
                      <h4 class="text--color-primary margin-top--md">Step 3</h4>
                      <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     `<img src="/img/preparation/step4.jpg" alt="" />
                      <h4 class="text--color-primary margin-top--md">Step 4</h4>
                      <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`
                 ]            
@@ -677,7 +677,7 @@ const recipesDB = [
                      <h4 class="text--color-primary margin-top--md">Step 3</h4>
                      <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     `<img src="/img/preparation/step4.jpg" alt="" />
                      <h4 class="text--color-primary margin-top--md">Step 4</h4>
                      <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`
                 ]            
@@ -726,7 +726,7 @@ const recipesDB = [
                      <h4 class="text--color-primary margin-top--md">Step 3</h4>
                      <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     `<img src="/img/preparation/step4.jpg" alt="" />
                      <h4 class="text--color-primary margin-top--md">Step 4</h4>
                      <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`
                 ]            
@@ -775,7 +775,7 @@ const recipesDB = [
                      <h4 class="text--color-primary margin-top--md">Step 3</h4>
                      <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     `<img src="/img/preparation/step4.jpg" alt="" />
                      <h4 class="text--color-primary margin-top--md">Step 4</h4>
                      <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`
                 ]            
@@ -824,7 +824,7 @@ const recipesDB = [
                      <h4 class="text--color-primary margin-top--md">Step 3</h4>
                      <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     `<img src="/img/preparation/step4.jpg" alt="" />
                      <h4 class="text--color-primary margin-top--md">Step 4</h4>
                      <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`
                 ]            
@@ -873,7 +873,7 @@ const recipesDB = [
                      <h4 class="text--color-primary margin-top--md">Step 3</h4>
                      <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`,
 
-                     `<img src="/img/preparation/step3.jpg" alt="" />
+                     `<img src="/img/preparation/step4.jpg" alt="" />
                      <h4 class="text--color-primary margin-top--md">Step 4</h4>
                      <p class="text">Duis dignissim mi ut laoreet mollis. Nunc id tellus finibus, eleifend mi vel, maximus justo. Maecenas mi tortor, pellentesque a aliquam ut, fringilla eleifend lectus. Maecenas ultrices tellus sit</p>`
                 ]            

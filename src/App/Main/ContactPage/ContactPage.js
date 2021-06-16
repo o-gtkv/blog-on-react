@@ -31,14 +31,14 @@ const ContactPage = () => {
                 </div>
                 <div className="row row--justify-center">
                     <div className="col-xs-12 col-md-8">
-                        <div className="centered-item-stack">
+                        <div className="text--align-center">
                             <h2>Cras massa tincidunt</h2>
                             <p className="text">
                                 Vestibulum vehicula tempor nulla, sed hendrerit urna interdum in. 
                                 Donec et nibh maximus, congue est eu, mattis nunc. 
                                 Praesent ut quam quis quam venenatis fringilla.
                             </p>
-                            <div className="line line--width-bold line--color-primary margin-bottom--md" />
+                            <div className="line line--width-bold line--color-primary line--justify-center margin-bottom--md" />
                             <FeedbackForm />
                         </div>
                     </div>
