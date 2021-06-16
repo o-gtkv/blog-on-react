@@ -1,10 +1,12 @@
 import React, { Fragment } from "react"
 
+import './AboutUsCol.css'
+
 const AboutUsCol = () => {
     return (
         <Fragment>
             <h4>About us</h4>
-            <ul className="about-us-list offset-top offset-bottom">
+            <ul className="about-us-list">
                 <li className="about-us-list__item">
                     <a className="about-us-list__link" href="">Aenean sollicitudin</a>
                 </li>

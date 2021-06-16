@@ -1,8 +1,8 @@
 import React from 'react'
 
-const FeedbackForm = () => {
+const FeedbackForm = (props) => {
     return (
-        <form className="form margin-bottom--lg">
+        <form className={`form + ${props.className}`}>
             <div className="adjacent-form-controls ">
                 <input className="form__control" type="text" placeholder="Your name" />
                 <input className="form__control" type="text" placeholder="Your email" />

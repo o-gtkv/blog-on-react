@@ -42,33 +42,32 @@ a:hover {
     text-decoration: underline;
 }
 
-p {
+p, h1, h2, h3, h4, h5, h6 {
     margin: 30px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;        
 }
 
 h1 {
     font-size: 60px;
-    font-weight: bold;
 }
 
 h2 {
-    font-size: 44px;
-    font-weight: 500;    
+    font-size: 44px;    
 }
 
 h3 {
-    font-size: 36px;
-    font-weight: 500;    
+    font-size: 36px;    
 }
 
 h4 {
-    font-size: 23px;
-    font-weight: 500;    
+    font-size: 23px;    
 }
 
 h5 {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 24px;    
 }
 
 .text {
@@ -76,15 +75,15 @@ h5 {
     line-height: 25px;
 }
 
-.text--align-center {    
+.text-align-center {    
     text-align: center;
 }
 
-.text--color-white {
+.text-color-white {
     color: white;
 }
 
-.text--color-primary {
+.text-color-primary {
     color: var(--primary-color);
 }
 
@@ -99,22 +98,6 @@ h5 {
 
 .read-more-link a {
     color: var(--primary-color)
-}
-
-
-.about-us-list__link {   
-    opacity: var(--text-opacity); 
-    color: black;
-}
-
-.about-us-list__item {
-    padding: 10px 0
-}
-
-.about-us-list__item::before {
-    content: "▸";
-    padding-right: 10px;
-    opacity: var(--text-opacity);
 }
 
 .socials {
@@ -160,8 +143,14 @@ h5 {
     text-decoration: none;    
 }
 
-.slide-text {
-    margin: 0 15%;
+.btn-link:active,
+.btn:active {    
+    filter: brightness(1);    
+}
+
+.large-content-text {
+    margin-left: 15%;
+    margin-right: 15%;
     font-size: 60px;
     font-family: Eczar, sans-serif;
     color: white;
@@ -185,52 +174,12 @@ h5 {
     width: 100%;
 }
 
-.line--color-gray {
-    color: #dedee2;
-}
-
 .line--color-primary {
     color: var(--primary-color);
 }
 
-.margin-bottom--md {
-    margin-bottom: 30px;    
-}
-
-.margin-bottom--xs {
-    margin-bottom: 15px;    
-}
-
-.margin-top--xs {
-    margin-top: 15px;    
-}
-
-.margin-bottom--lg {
-    margin-bottom: 100px;    
-}
-
-.margin-top--lg {
-    margin-top: 100px;    
-}
-
-.margin-bottom--xl {
-    margin-bottom: 300px;    
-}
-
-.margin-top--md {
-    margin-top: 30px;    
-}
-
-.margin-left--md {
-    margin-left: 30px;
-}
-
-.margin-right--md {
-    margin-right: 30px;
-}
-
 @media (max-width: 600px) {
-    .slide-text {
+    .large-content-text {
         font-size: 30px;        
     }
 }

@@ -1,7 +1,19 @@
-.comments-list {
-    background-color: #eeeef2;
+.comments__form {
+    margin: 30px 0;
 }
 
-.comments-list__item + .comments-list__item {
+.comments-list__item:first-child {
+    margin-top: 30px;
+}
+
+.comments-list__item {
+    padding: 30px 30px;
     margin-top: 15px;
+    background-color: #eeeef2;    
+}
+
+.comments-list__item-from {
+    font-family: Eczar, sans-serif;
+    font-weight: 500;
+    padding-bottom: 10px;    
 }

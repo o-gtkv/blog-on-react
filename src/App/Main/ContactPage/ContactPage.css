@@ -2,3 +2,21 @@
     background-image: url(/img/home_diet_sectionbg4.jpg);
     height: 870px;
 }
+
+.contact-page__contact {
+    margin-top: 30px;
+}
+
+.contact_page__feedback-form {
+    margin: 30px 0 70px;
+}
+
+.contact-page__contact-block {
+    margin-top: 30px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #dedee2;
+}
+
+.contact-page__feedback-form-block {
+    margin-top: 60px;    
+}

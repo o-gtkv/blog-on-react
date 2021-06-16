@@ -3,9 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import './Contact.css'
 
-const Contact = ({icon, title, contact}) => {
+const Contact = ({icon, title, contact, ...props}) => {
     return (
-        <div className="contact-item margin-top--md margin-bottom--md">
+        <div className={`contact-item ${props.className}`}>
             <div>
                 <FontAwesomeIcon className="contact-item__icon" icon={icon} />
             </div>

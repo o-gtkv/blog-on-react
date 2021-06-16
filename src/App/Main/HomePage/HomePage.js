@@ -10,7 +10,7 @@ const HomePage = () => {
     return (
         <Fragment>
             <Slider backgroundImage="/img/bg/slider1.jpg" height="800px">
-                <div className="slide-text">
+                <div className="large-content-text">
                     Welcome to the place full of healthy food and ideas to keep you fit
                 </div>
             </Slider>
@@ -21,7 +21,7 @@ const HomePage = () => {
                     <div>
                         <img src="/img/blockquote.png" alt="" />
                     </div>
-                    <div className="slide-text">
+                    <div className="large-content-text">
                         Red meat is a good source of protein, iron, vitamin B, riboflavin, thiamin and niacin.
                     </div>
                 </Fragment>

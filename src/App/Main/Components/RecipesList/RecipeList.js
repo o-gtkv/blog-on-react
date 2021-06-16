@@ -1,6 +1,9 @@
 import React from 'react'
 import { connect } from 'react-redux'
+
 import RecipesCard from './RecipesCard/RecipesCard'
+
+import './RecipeList.css'
 
 const RecipesList = ({recipesDB, category}) => {    
     if (category === 'popular') {
@@ -33,7 +36,7 @@ const RecipesList = ({recipesDB, category}) => {
     }
 
     return (
-        <div className="row">
+        <div className="row recipes-list">
             {recipesList}
         </div>
     )

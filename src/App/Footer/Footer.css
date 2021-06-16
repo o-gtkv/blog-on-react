@@ -13,11 +13,11 @@
     border-top: 1px solid silver;
 }
 
-.socials.offset-top,
-.about-us-list.offset-top {
+.footer .about-us-list {
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-.about-us-list.offset-bottom {
-    margin-bottom: 30px;
+.footer .socials {
+    margin-top: 30px;
 }

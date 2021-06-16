@@ -1,0 +1,14 @@
+.about-us-list__link {   
+    opacity: var(--text-opacity); 
+    color: black;
+}
+
+.about-us-list__item {
+    padding: 10px 0
+}
+
+.about-us-list__item::before {
+    content: "▸";
+    padding-right: 10px;
+    opacity: var(--text-opacity);
+}

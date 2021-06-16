@@ -15,7 +15,7 @@ const ContactCol = () => {
             <div>
                 <a className="text" href="mailto:noreply@envato.com">noreply@envato.com</a>
             </div>                        
-            <ul className="socials offset-top">
+            <ul className="socials">
                 <li><a href=""><FontAwesomeIcon icon={faFacebookF} /></a></li>
                 <li><a href=""><FontAwesomeIcon icon={faTwitter} /></a></li>
                 <li><a href=""><FontAwesomeIcon icon={faInstagram} /></a></li>

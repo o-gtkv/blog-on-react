@@ -26,7 +26,7 @@ const RecipePage = ({recipesDB, teamDB, match, comments, handleAddComment}) => {
 
     const renderAdviceBlock = () => (        
         <div className="recipe-page__content-info-block">
-            <h5 className="text--color-primary">Good advice</h5>
+            <h5 className="text-color-primary">Good advice</h5>
             <p className="text good-advice">{advice}</p>                                        
         </div>
     )    
@@ -34,7 +34,7 @@ const RecipePage = ({recipesDB, teamDB, match, comments, handleAddComment}) => {
     return (
         <Fragment>
             <CenteredItemsContainer backgroundImage={image} height="700px">
-                <h2 className="text--color-white slide-text">{name}</h2>
+                <h2 className="text-color-white large-content-text">{name}</h2>
             </CenteredItemsContainer>      
             <div className="container">
                 <div className="row">
@@ -43,16 +43,16 @@ const RecipePage = ({recipesDB, teamDB, match, comments, handleAddComment}) => {
                             <div className="row">                                                   
                                 <div className="col-xs-12 col-md-8 recipe-page__content-main">                                     
                                     <div className="recipe-page__content-main-block">
-                                        <h2 className="margin-top--md margin-bottom--md">Vontallen sallad</h2>
-                                        <div className="line line--width-bold line--color-primary margin-bottom--md" />
+                                        <h2>Vontallen sallad</h2>
+                                        <div className="line line--width-bold line--color-primary" />
                                         <div dangerouslySetInnerHTML={{__html: fullDescription.content}} />                                        
                                     </div>                                            
                                     <div className="recipe-page__content-main-block">
-                                        <h3 className="text--color-primary margin-bottom--md">Ingredients</h3>                                        
+                                        <h3 className="text-color-primary">Ingredients</h3>                                        
                                         <div dangerouslySetInnerHTML={{__html: fullDescription.ingredients}} />
                                     </div>
                                     <div className="recipe-page__content-main-block">
-                                        <h3 className="text--color-primary margin-bottom--md">Preparation</h3>                                        
+                                        <h3 className="text-color-primary">Preparation</h3>                                        
                                         <div dangerouslySetInnerHTML={{__html: fullDescription.preparation.intro}} />                                        
                                         <div className="row">                                            
                                             {
@@ -86,8 +86,7 @@ const RecipePage = ({recipesDB, teamDB, match, comments, handleAddComment}) => {
                 </div>
                 <div className="row">
                     <div className="col-xs-12 col-md-9">
-                        <Comments 
-                            className="margin-top--md margin-bottom--md"
+                        <Comments                            
                             id={id}
                             comments={comments}
                             handleAddComment={handleAddComment} />

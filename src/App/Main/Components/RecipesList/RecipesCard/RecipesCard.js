@@ -9,11 +9,10 @@ import './RecipesCard.css'
 
 const RecipesCard = ({id, image, name, description, likes}) => {
     const recipePath = `/recipes/${id}`
-
     const [likesCount, incLikesCount] = useState(likes)
 
     return (
-        <div className="recipes-card margin-bottom--md margin-top--md">
+        <div className="recipes-card">
             <div className="recipes-card__picture">
                 <img src={image} alt="" />
                 <div className="recipes-card__actions">

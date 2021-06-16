@@ -27,11 +27,11 @@ const TeamMemberCard = ({
     const photoStyle = photoInfoLayout === 'horizontal' ? {width: '100px', alignSelf: 'flex-end'} : {}
 
     return (
-        <div className={(props.className || '') + ' team-member-card'} style={textAlignStyle}>            
+        <div className={`team-member-card ${props.className}`} style={textAlignStyle}>            
             <div style={photoInfoLayoutStyle}>
                 <img src={photo} alt="" style={photoStyle} />
                 <div>
-                    <h3 className="team-member-card__name margin-top--md ">{name}</h3>
+                    <h3 className="team-member-card__name">{name}</h3>
                     <div className="team-member-card__personal-data text">{age} years cooker</div>
                     <div className="team-member-card__personal-data text">{country}</div>                
                 </div>

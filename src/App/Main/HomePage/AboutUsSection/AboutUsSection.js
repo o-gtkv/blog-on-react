@@ -10,12 +10,12 @@ const AboutUsSection = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-xs-8">
-                            <h5 className="text--color-primary text--align-center margin-top--md">About us</h5>
-                            <div className="text--align-center">
-                                <h2 className="text--color-white slide-text margin-top--md margin-bottom--md">
+                            <h5 className="text-color-primary text-align-center">About us</h5>
+                            <div className="text-align-center">
+                                <p className="text-color-white large-content-text">
                                     Maecenas eleifend erat at justo fringilla imperdiet id ac magna. Suspendisse vel facilisis
                                     odio, at ornare malesuada.
-                                </h2>
+                                </p>
                             </div>
                             <Link className="btn-link" to="/about-us">Read more about our amazing team</Link>
                         </div>

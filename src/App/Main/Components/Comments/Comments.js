@@ -1,17 +1,16 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import { useState } from 'react'
 
 import './Comments.css'
 
 function addComment(comments, id, commentFormState) {
-    if (!comments[id]) {
-        comments[id] = []
-    }
+    if (!comments[id])
+        comments[id] = []    
     comments[id].push(commentFormState)
     return comments
 }
 
-const Comments = ({className, id, comments, handleAddComment}) => {            
+const Comments = ({className, id, comments, handleAddComment}) => {
     const initCommentFormState = {name: '', msg: ''}
     const [commentFormState, setCommentFormState] = useState(initCommentFormState)
 
@@ -25,34 +24,42 @@ const Comments = ({className, id, comments, handleAddComment}) => {
         setCommentFormState({...commentFormState, name: e.target.value})
     }
 
-    const handleMessageChange = (e) =>{
+    const handleMessageChange = (e) => {
         setCommentFormState({...commentFormState, msg: e.target.value})
     }
 
+    const renderCommentsList = () => {
+        if (comments[id]) {
+            return (
+                <div className="comments-list">
+                    {
+                        comments[id].map((comment, i) => (
+                            <div  className="comments-list__item" key={i}>                                
+                                <div className="comments-list__item-from">{`${(new Date()).toDateString()} from ${comment.name}`}</div>
+                                <div>{comment.msg}</div>
+                            </div>
+                        ))
+                    }                    
+                </div>
+            )            
+        }
+        return null
+    }
+
     return (  
-        <Fragment>
-            <div className="row margin-top--md">
+        <div className="comments">
+            <div className="row">
                 <div className="col-xs-12 col-md-3">
                     <h4>Comments</h4>
-                    <div className="line line--color-primary line--width-bold margin-top--xs margin-bottom--xs" />
+                    <div className="line line--color-primary line--width-bold" />
+                </div>  
+            </div>
+            <div className="row">
+                <div className="col-xs-12 col-md-9">
+                    {renderCommentsList()}
                 </div>
-            </div>
-            <div className="comments-list margin-top--md">
-                {   
-                    (function () {
-                        if (comments[id]) {
-                            return comments[id].map((comment, i) => (
-                                <div  className="comments-list__item" key={i}>
-                                    <div style={{lineHeight: '20px'}}>{`${(new Date()).toDateString()} from ${comment.name}`}</div>
-                                    <div>{comment.msg}</div>
-                                </div>
-                            ))
-                        }
-                        return null
-                    })()
-                }   
-            </div>
-            <form className={`form ${className}`}>
+            </div>            
+            <form className={`form comments__form ${className}`} onSubmit={handleSubmit} >
                 <div className="row">
                     <div className="col-xs-12 col-md-3">
                         <input 
@@ -60,7 +67,9 @@ const Comments = ({className, id, comments, handleAddComment}) => {
                             type="text" 
                             value={commentFormState.name} 
                             onChange={handleNameChange} 
-                            placeholder="Your name" 
+                            placeholder="Your name"                             
+                            minLength={3}
+                            required={true}
                         />
                     </div>
                 </div>
@@ -72,22 +81,22 @@ const Comments = ({className, id, comments, handleAddComment}) => {
                             value={commentFormState.msg} 
                             onChange={handleMessageChange} 
                             placeholder="Message"
+                            minLength={3}
+                            required={true}
                         />
                     </div>
                 </div>                            
                 <div className="row">
-                    <div className="col-xs-12 col-md-9" style={{display: 'flex', justifyContent: 'flex-end'}}>
+                    <div className="col-xs-12 col-md-9" >
                         <input 
                             className="btn form__control" 
                             type="submit" 
-                            onClick={handleSubmit} 
-                            value="Send" 
-                            disabled={commentFormState.name === '' || commentFormState.msg === ''}
+                            value="Send"                             
                         />
                     </div>
                 </div>                            
             </form>            
-        </Fragment>    
+        </div>    
     )
 }
 
