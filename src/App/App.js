@@ -12,7 +12,7 @@ import articlesDB from './articlesDB'
 import teamDB from './teamDB'
 
 class App extends Component {    
-    componentDidMount() {        
+    componentDidMount() {
         this.props.dispatch({
             type: actionType.LOAD_RECIPES,
             recipesList: recipesDB
