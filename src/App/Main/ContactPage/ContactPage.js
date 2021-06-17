@@ -13,7 +13,7 @@ const ContactPage = () => {
     return (
         <div className="contact-page">            
             <CenteredItemsContainer backgroundImage={"/img/home_diet_sectionbg4.jpg"} height={"870px"}>            
-                <h2 className="text-color-white">Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor facilisis.</h2>            
+                <h2 className="large-content-text">Vestibulum commodo volutpat a, convallis ac, laoreet enim. Phasellus fermentum in, dolor facilisis.</h2>            
             </CenteredItemsContainer>
             <div className="container">
                 <div className="row row--justify-center contact-page__contact-block">
