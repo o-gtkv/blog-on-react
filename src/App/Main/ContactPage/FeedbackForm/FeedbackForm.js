@@ -6,6 +6,7 @@ const FeedbackForm = (props) => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
+        setUserData({name: '', email: '', subject: '', msg: ''})
         console.log('Not implemented yet.');
         // axios.post('https://my-json-server.typicode.com/o-gtkv/server/someData', userData)
         //     .then(res => res.data)

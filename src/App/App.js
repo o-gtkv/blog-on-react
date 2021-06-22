@@ -11,7 +11,7 @@ import recipesDB from './recipesDB'
 import articlesDB from './articlesDB'
 import teamDB from './teamDB'
 
-class App extends Component {    
+class App extends Component {        
     componentDidMount() {
         this.props.dispatch({
             type: actionType.LOAD_RECIPES,
@@ -26,17 +26,16 @@ class App extends Component {
         this.props.dispatch({
             type: actionType.LOAD_TEAM,
             teamList: teamDB
-        })
-        
+        })                    
     }
 
     render() {
         return ( 
-            <BrowserRouter>    
-                <Header />
+            <BrowserRouter>                        
+                <Header />                
                 <Main />
-                <Footer />   
-            </BrowserRouter>
+                <Footer />  
+            </BrowserRouter>                
         )
     }
 }

@@ -26,7 +26,7 @@ const Footer = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-xs-12">
-                            <span className="text">© 2021 BeDiet - BeTheme. All Rights Reserved. Muffin group</span>
+                            <span className="text">© 2021 All Rights Reserved.</span>
                         </div>
                     </div>
                 </div>

@@ -13,6 +13,7 @@ class SearchForm extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault()
+        this.setState({value: ''})
         console.log('Not implemented yet.');
     }
 

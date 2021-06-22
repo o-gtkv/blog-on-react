@@ -12,8 +12,8 @@ const Main = () => {
     const [comments, handleAddComment] = useState({})
 
     return (
-        <main className="main">
-            <Route exact path="/" render={() => <HomePage />} />
+        <main className="main">            
+            <Route exact path="/" render={() => <HomePage />} />                        
             <Route exact path="/about-us" component={AboutUsPage} />
             <Route exact path="/contact" component={ContactPage} />
             <Route exact path="/breakfast" render={() => <RecipesPage category="Breakfast" />} />
