@@ -21,12 +21,14 @@ const FeedbackForm = (props) => {
                     onChange={(e) => setUserData({...userData, name: e.target.value})}
                     placeholder="Your name"
                     value={userData.name}
+                    name="name"
                     required />
                 <input className="form__control"
                     type="text"
                     onChange={(e) => setUserData({...userData, email: e.target.value})}
                     placeholder="Your email"
                     value={userData.email}
+                    name="email"
                     required />
             </div>
             <div>
@@ -42,6 +44,7 @@ const FeedbackForm = (props) => {
                     placeholder="Message"
                     onChange={(e) => setUserData({...userData, msg: e.target.value})}
                     value={userData.msg}
+                    name="msg"
                     required />
             </div>
             <div>

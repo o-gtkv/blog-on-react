@@ -24,7 +24,8 @@ class SearchForm extends Component {
                     className="search-form__control" 
                     type="text" 
                     value={this.state.value} 
-                    placeholder="Enter your search" 
+                    placeholder="Enter your search"
+                    name="search" 
                     onChange={this.handleChange} />
             </form>
         )
