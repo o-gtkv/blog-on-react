@@ -10,6 +10,7 @@ import Footer from './Footer/Footer'
 import recipesDB from './recipesDB'
 import articlesDB from './articlesDB'
 import teamDB from './teamDB'
+import ScrollToTop from './Main/Components/ScrollToTop/ScrollToTop'
 
 class App extends Component {        
     componentDidMount() {
@@ -30,12 +31,13 @@ class App extends Component {
     }
 
     render() {
-        return ( 
-            <BrowserRouter>                        
-                <Header />                
+        return (             
+            <BrowserRouter>         
+                <ScrollToTop />
+                <Header />                       
                 <Main />
                 <Footer />  
-            </BrowserRouter>                
+            </BrowserRouter>                            
         )
     }
 }
