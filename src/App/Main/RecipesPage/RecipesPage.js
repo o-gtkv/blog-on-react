@@ -7,7 +7,7 @@ import Panel from './Panel/Panel'
 
 import './RecipesPage.css'
 
-const RecipesPage = ({category}) => {
+const RecipesPage = ({category}) => {        
     return (
         <div className="recipes-page">
             <CenteredItemsContainer backgroundImage="/img/home_diet_sectionbg4.jpg" height="200px">

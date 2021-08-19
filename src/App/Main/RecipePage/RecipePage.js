@@ -11,7 +11,7 @@ import ProcentageScale from './ProcentageScale/ProcentageScale'
 import './RecipePage.css'
 
 const RecipePage = ({recipesDB, teamDB, match, comments, handleAddComment}) => {
-    if (recipesDB.length === 0 || teamDB.length === 0)
+    if (!recipesDB.length || !teamDB.length)
         return null
 
     const {

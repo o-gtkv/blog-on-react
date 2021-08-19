@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { useEffect } from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import { connect } from 'react-redux'
 
@@ -12,34 +12,32 @@ import articlesDB from './articlesDB'
 import teamDB from './teamDB'
 import ScrollToTop from './Main/Components/ScrollToTop/ScrollToTop'
 
-class App extends Component {        
-    componentDidMount() {
-        this.props.dispatch({
+const App = (props) => {        
+    useEffect(() => {
+        props.dispatch({
             type: actionType.LOAD_RECIPES,
             recipesList: recipesDB
         })
 
-        this.props.dispatch({
+        props.dispatch({
             type: actionType.LOAD_ARTICLES,
             articlesList: articlesDB
         })
 
-        this.props.dispatch({
+        props.dispatch({
             type: actionType.LOAD_TEAM,
             teamList: teamDB
-        })                    
-    }
-
-    render() {
-        return (             
-            <BrowserRouter>         
-                <ScrollToTop />
-                <Header />                       
-                <Main />
-                <Footer />  
-            </BrowserRouter>                            
-        )
-    }
+        })  
+    }, [])
+    
+    return (             
+        <BrowserRouter>         
+            <ScrollToTop />
+            <Header />                       
+            <Main />
+            <Footer />  
+        </BrowserRouter>                            
+    )
 }
 
 export default connect()(App)

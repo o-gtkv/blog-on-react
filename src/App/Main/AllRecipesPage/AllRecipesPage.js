@@ -19,7 +19,7 @@ const AllRecipesPage = () => {
                     </div>
                 </div>
             </div>
-            <div class="panel-wrapper">
+            <div className="panel-wrapper">
                 <Panel />
             </div>
         </Fragment>

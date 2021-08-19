@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Route } from 'react-router-dom'
+import { Redirect, Route, Switch } from 'react-router-dom'
 
 import HomePage from './HomePage/HomePage'
 import AboutUsPage from './AboutUsPage/AboutUsPage'
@@ -11,17 +11,23 @@ import AllRecipesPage from './AllRecipesPage/AllRecipesPage'
 const Main = () => {
     const [comments, handleAddComment] = useState({})
 
+    const routesProps = [
+        {exact: true, path: "/", component: HomePage},        
+        {exact: true, path: "/about-us", component: AboutUsPage},
+        {exact: true, path: "/contact", component: ContactPage},
+        {exact: true, path: "/breakfast", render: () => <RecipesPage category="Breakfast" />},
+        {exact: true, path: "/lunch", render: () => <RecipesPage category="Lunch" />},
+        {exact: true, path: "/dinner", render: () => <RecipesPage category="Dinner" />},
+        {exact: true, path: "/recipes/:id", render: ({match}) => <RecipePage match={match} comments={comments} handleAddComment={handleAddComment} />},        
+        {exact: true, path: "/all-recipes", render: () => <AllRecipesPage />},
+    ]
+
     return (
         <main className="main">
-            <Route exact path="/" render={() => <HomePage />} />
-            <Route exact path="/about-us" component={AboutUsPage} />
-            <Route exact path="/contact" component={ContactPage} />
-            <Route exact path="/breakfast" render={() => <RecipesPage category="Breakfast" />} />
-            <Route exact path="/lunch" render={() => <RecipesPage category="Lunch" />} />
-            <Route exact path="/dinner" render={() => <RecipesPage category="Dinner" />} />
-            <Route exact path="/recipes/:id" 
-                   render={({match}) => <RecipePage match={match} comments={comments} handleAddComment={handleAddComment} />} />
-            <Route exact path="/all-recipes" render={() => <AllRecipesPage />} />
+            <Switch>
+                {routesProps.map((routeProps, i) => <Route key={i} {...routeProps} />)}
+                <Redirect to='/' />
+            </Switch>
         </main>
     )
 }

@@ -10,7 +10,7 @@ import './Panel.css'
 // TODO: make RecentPostList
 
 const Panel = ({recipesDB, className=''}) => {    
-    if (recipesDB.length === 0)
+    if (!recipesDB.length)
         return null
 
     let recentPosts = recipesDB.sort((recipe1, recipe2) => new Date(recipe2.date) - new Date(recipe1.date)).slice(0, 2)
