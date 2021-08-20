@@ -1,5 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import { Col, Row } from 'react-bootstrap'
 
 import RecipesCard from './RecipesCard/RecipesCard'
 
@@ -29,16 +30,16 @@ const RecipesList = ({recipesDB, category}) => {
             }
         }
         recipesList.push(
-            <div key={i} className="col-xs-12 col-md-4">
+            <Col key={i} xs={12} md={4}>
                 {recipes}
-            </div>
+            </Col>
         )
     }
 
     return (
-        <div className="row recipes-list">
+        <Row className="recipes-list">
             {recipesList}
-        </div>
+        </Row>
     )
 }
 

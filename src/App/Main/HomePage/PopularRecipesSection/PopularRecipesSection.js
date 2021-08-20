@@ -1,4 +1,5 @@
 import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
 import RecipesList from '../../Components/RecipesList/RecipeList'
 
 import './PopularRecipesSection.css'
@@ -6,16 +7,16 @@ import './PopularRecipesSection.css'
 const PopularRecipesSection = () => {
     return (
         <section className="popular-recipes">
-            <div className="container">
-                <div className="row">
-                    <div className="col-xs-12">
+            <Container>
+                <Row>
+                    <Col xs={12}>
                         <div className="popular-recipes__header">
                             <span className="popular-recipes__header-text">The most popular recipes</span>
                         </div>
-                    </div>                    
-                </div>                                
+                    </Col>                    
+                </Row>                                
                 <RecipesList category={'popular'} />                    
-            </div>
+            </Container>
         </section>
     )
 }

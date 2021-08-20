@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 
 import Logo from './Logo/Logo'
 import Menu from './Menu/Menu'
@@ -8,16 +9,16 @@ import './Header.css'
 const Header = () => {
     return (
         <header className="header">
-            <div className="container">
-                <div className="row">
-                    <div className="col-xs-6 col-md-4">
+            <Container>
+                <Row>
+                    <Col xs={6} md={4}>
                         <Logo />
-                    </div>
-                    <div className="col-xs-6 col-md-8">
+                    </Col>
+                    <Col xs={6} md={8}>
                         <Menu />
-                    </div>
-                </div>
-            </div>
+                    </Col>
+                </Row>
+            </Container>
         </header>
     )
 }

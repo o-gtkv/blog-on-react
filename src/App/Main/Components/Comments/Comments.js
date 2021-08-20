@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import { Row, Col } from 'react-bootstrap'
 
 import './Comments.css'
 
@@ -48,20 +49,20 @@ const Comments = ({className, id, comments, handleAddComment}) => {
 
     return (  
         <div className="comments">
-            <div className="row">
-                <div className="col-xs-12 col-md-3">
+            <Row>
+                <Col xs={12} md={3}>
                     <h4>Comments</h4>
                     <div className="line line--color-primary line--width-bold" />
-                </div>  
-            </div>
-            <div className="row">
-                <div className="col-xs-12 col-md-9">
+                </Col>  
+            </Row>
+            <Row>
+                <Col xs={12} md={9}>
                     {renderCommentsList()}
-                </div>
-            </div>            
+                </Col>
+            </Row>            
             <form className={`form comments__form ${className}`} onSubmit={handleSubmit} >
-                <div className="row">
-                    <div className="col-xs-12 col-md-3">
+                <Row>
+                    <Col xs={12} md={3}>
                         <input 
                             className="form__control" 
                             type="text" 
@@ -71,10 +72,10 @@ const Comments = ({className, id, comments, handleAddComment}) => {
                             minLength={3}
                             required={true}
                         />
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-xs-12 col-md-9">
+                    </Col>
+                </Row>
+                <Row>
+                    <Col xs={12} md={9}>
                         <textarea 
                             className="form__control" 
                             rows="10" 
@@ -84,17 +85,17 @@ const Comments = ({className, id, comments, handleAddComment}) => {
                             minLength={3}
                             required={true}
                         />
-                    </div>
-                </div>                            
-                <div className="row">
-                    <div className="col-xs-12 col-md-9" >
+                    </Col>
+                </Row>                            
+                <Row>
+                    <Col xs={12} md={9}>
                         <input 
                             className="btn form__control" 
                             type="submit" 
                             value="Send"                             
                         />
-                    </div>
-                </div>                            
+                    </Col>
+                </Row>                            
             </form>            
         </div>    
     )

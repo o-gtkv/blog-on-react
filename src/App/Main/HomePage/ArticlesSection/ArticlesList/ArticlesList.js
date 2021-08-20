@@ -1,4 +1,5 @@
 import React from 'react'
+import { Row, Col } from 'react-bootstrap'
 import { connect } from 'react-redux'
 
 import ArticleCard from './ArticleCard/ArticleCard'
@@ -20,16 +21,16 @@ const ArticleList = ({articlesDB}) => {
             }
         }
         articlesList.push(
-            <div key={i} className="col-xs-12 col-md-6">
+            <Col key={i} xs={12} md={6}>
                 {articles}
-            </div>
+            </Col>
         )
     }
 
     return (
-        <div className="row">
+        <Row>
             {articlesList}
-        </div>
+        </Row>
     )
 }
 

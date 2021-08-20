@@ -1,4 +1,5 @@
 import React from 'react'
+import { Container, Row } from 'react-bootstrap'
 import ArticlesList from './ArticlesList/ArticlesList'
 
 import './ArticlesSection.css'
@@ -6,11 +7,11 @@ import './ArticlesSection.css'
 const ArticlesSection = () => {
     return (
         <section className="articles">
-            <div className="container">
-                <div className="row">
+            <Container>
+                <Row>
                     <ArticlesList />
-                </div>
-            </div>
+                </Row>
+            </Container>
         </section>
     )
 }

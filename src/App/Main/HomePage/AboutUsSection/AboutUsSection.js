@@ -1,4 +1,5 @@
 import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 import CenteredItemsContainer from '../../Components/CenteredItemsContainer/CenteredItemsContainer'
@@ -7,9 +8,9 @@ const AboutUsSection = () => {
     return (
         <section>
             <CenteredItemsContainer backgroundImage="/img/bg/about_section.jpg" height="800px">        
-                <div className="container">
-                    <div className="row">
-                        <div className="col-xs-8">
+                <Container>
+                    <Row className="d-flex justify-content-center">
+                        <Col xs={8}>
                             <h5 className="text-color-primary text-align-center">About us</h5>
                             <div className="text-align-center">
                                 <p className="text-color-white large-content-text">
@@ -18,9 +19,9 @@ const AboutUsSection = () => {
                                 </p>
                             </div>
                             <Link className="btn-link" to="/about-us">Read more about our amazing team</Link>
-                        </div>
-                    </div>
-                </div>
+                        </Col>
+                    </Row>
+                </Container>
             </CenteredItemsContainer>
         </section>
     )

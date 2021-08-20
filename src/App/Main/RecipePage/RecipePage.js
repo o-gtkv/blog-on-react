@@ -1,5 +1,6 @@
 import React, { Fragment } from 'react'
 import { connect } from 'react-redux'
+import { Col, Container, Row } from 'react-bootstrap'
 
 import CenteredItemsContainer from '../Components/CenteredItemsContainer/CenteredItemsContainer'
 import AllRecipesLink from '../Components/AllRecipesLink/AllRecipesLink'
@@ -36,12 +37,12 @@ const RecipePage = ({recipesDB, teamDB, match, comments, handleAddComment}) => {
             <CenteredItemsContainer backgroundImage={image} height="700px">
                 <h2 className="text-color-white large-content-text">{name}</h2>
             </CenteredItemsContainer>      
-            <div className="container">
-                <div className="row">
-                    <div className="col-xs-12">
+            <Container>
+                <Row>
+                    <Col xs={12}>
                         <div className="recipe-page__content">
-                            <div className="row">                                                   
-                                <div className="col-xs-12 col-md-8 recipe-page__content-main">                                     
+                            <Row>
+                                <Col className="recipe-page__content-main" xs={12} md={8}>  
                                     <div className="recipe-page__content-main-block">
                                         <h2>Vontallen sallad</h2>
                                         <div className="line line--width-bold line--color-primary" />
@@ -54,45 +55,47 @@ const RecipePage = ({recipesDB, teamDB, match, comments, handleAddComment}) => {
                                     <div className="recipe-page__content-main-block">
                                         <h3 className="text-color-primary">Preparation</h3>                                        
                                         <div dangerouslySetInnerHTML={{__html: fullDescription.preparation.intro}} />                                        
-                                        <div className="row">                                            
+                                        <Row>
                                             {
                                                 fullDescription.preparation.steps.map((step, i) => (
-                                                    <div className="col-xs-12 col-md-6" key={i}>
+                                                    <Col xs={12} md={6} key={i}>
                                                         <div dangerouslySetInnerHTML={{__html: step}} />
-                                                    </div>        
+                                                    </Col>        
                                                 ))
                                             }                                    
-                                        </div>
+                                        </Row>
                                     </div>                                      
-                                </div>                        
-                                <div className="col-xs-12 col-md-4 recipe-page__content-info">                                
+                                </Col>                        
+                                <Col className="recipe-page__content-info" xs={12} md={4}>  
                                     <TeamMemberCard 
                                         className="recipe-page__content-info-block" 
                                         {...teamDB[authorID - 1]} 
-                                        photoInfoLayout="horizontal" />
+                                        photoInfoLayout="horizontal" 
+                                    />
                                     {advice ? renderAdviceBlock() : null}
                                     {
-                                        stat.map((item, i) => (
+                                        stat.map((item, i) => 
                                             <ProcentageScale 
                                                 className="recipe-page__content-info-block" 
                                                 key={i} label={item.label} 
-                                                value={item.value} />
-                                        ))
+                                                value={item.value} 
+                                            />
+                                        )
                                     }
-                                </div>
-                            </div>
+                                </Col>
+                            </Row>
                         </div>            
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-xs-12 col-md-9">
+                    </Col>
+                </Row>
+                <Row>
+                    <Col xs={12} md={9}>
                         <Comments                            
                             id={id}
                             comments={comments}
                             handleAddComment={handleAddComment} />
-                    </div>
-                </div>
-            </div>                
+                    </Col>
+                </Row>
+            </Container>                
             <AllRecipesLink />
         </Fragment>
     )

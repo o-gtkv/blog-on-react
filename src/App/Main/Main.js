@@ -25,7 +25,11 @@ const Main = () => {
     return (
         <main className="main">
             <Switch>
-                {routesProps.map((routeProps, i) => <Route key={i} {...routeProps} />)}
+                {
+                    routesProps.map((routeProps, i) => 
+                        <Route key={i} {...routeProps} />
+                    )
+                }
                 <Redirect to='/' />
             </Switch>
         </main>
