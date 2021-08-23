@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const ContactCol = () => {
     return (
-        <Fragment>
+        <>
             <h4>Contact</h4>
             <p className="text">
                 <strong>BeDiet</strong>- Phasellus orci luctus et lacus lorem, tempus tellus. Integer mattis.
@@ -21,7 +21,7 @@ const ContactCol = () => {
                 <li><a href=""><FontAwesomeIcon icon={faInstagram} /></a></li>
                 <li><a href=""><FontAwesomeIcon icon={faDribbble} /></a></li>
             </ul>                       
-        </Fragment>
+        </>
     )
 }
 

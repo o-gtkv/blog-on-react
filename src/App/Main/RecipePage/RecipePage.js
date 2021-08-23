@@ -33,7 +33,7 @@ const RecipePage = ({recipesDB, teamDB, match, comments, handleAddComment}) => {
     )    
 
     return (
-        <Fragment>
+        <>
             <CenteredItemsContainer backgroundImage={image} height="700px">
                 <h2 className="text-color-white large-content-text">{name}</h2>
             </CenteredItemsContainer>      
@@ -97,7 +97,7 @@ const RecipePage = ({recipesDB, teamDB, match, comments, handleAddComment}) => {
                 </Row>
             </Container>                
             <AllRecipesLink />
-        </Fragment>
+        </>
     )
 }
 

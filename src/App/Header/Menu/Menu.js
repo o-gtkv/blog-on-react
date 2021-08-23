@@ -28,7 +28,7 @@ const Menu = () =>  {
     }
     // + menuBarIsVisible ? ' visible-elem' : ''
     return (    
-        <Fragment>
+        <>
             <div className={'menu-bar'}>
                 <ul className="menu">                         
                     {
@@ -45,7 +45,7 @@ const Menu = () =>  {
             <div onClick={toggleMenuBar} className="mobile-menu">                
                 <FontAwesomeIcon icon={faBars}/>
             </div>
-        </Fragment>
+        </>
     )
 }
 

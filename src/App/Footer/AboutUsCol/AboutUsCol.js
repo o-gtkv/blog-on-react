@@ -13,7 +13,7 @@ const AboutUsCol = () => {
     ]
 
     return (
-        <Fragment>
+        <>
             <h4>About us</h4>
             <ul className="about-us-list">
                 {
@@ -24,7 +24,7 @@ const AboutUsCol = () => {
                     )
                 }                                
             </ul>            
-        </Fragment>
+        </>
     )
 }
 
