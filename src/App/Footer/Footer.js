@@ -5,7 +5,6 @@ import AboutUsCol from './AboutUsCol/AboutUsCol'
 import MissionCol from './MissionCol/MissionCol'
 import ContactCol from './ContactCol/ContactCol'
 
-
 import './Footer.css'
 
 const Footer = () => {

@@ -1,23 +1,29 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import { Row, Col } from 'react-bootstrap'
 import { connect } from 'react-redux'
 
 import ArticleCard from './ArticleCard/ArticleCard'
 
-const ArticleList = ({articlesDB}) => {
+function makeArticlesList(articlesDB) {
+    if (!articlesDB.length)
+        return null
+
     const itemsPerRow = 2
     const itemsPerCol = Math.floor(articlesDB.length / itemsPerRow)
 
     let k = 0;
-    let h = articlesDB.length % itemsPerRow
+    let h = articlesDB.length % itemsPerRow    
 
     const articlesList = []
     for (let i = 0; i < itemsPerRow; ++i) {
         const articles = []
         for (let j = 0; j < itemsPerCol; ++j) {
-            articles.push(<ArticleCard key={articlesDB[k].id} {...articlesDB[k++]}  />)
+            // console.log(k++);
+            articles.push(<ArticleCard key={articlesDB[k].id} {...articlesDB[k]}  />)
+            ++k            
             if (h-- > 0) {
-                articles.push(<ArticleCard key={articlesDB[k].id} {...articlesDB[k++]} />)
+                articles.push(<ArticleCard key={articlesDB[k].id} {...articlesDB[k]} />)
+                ++k
             }
         }
         articlesList.push(
@@ -25,7 +31,14 @@ const ArticleList = ({articlesDB}) => {
                 {articles}
             </Col>
         )
-    }
+    } 
+
+    return articlesList
+
+}
+
+const ArticleList = ({articlesDB}) => {    
+    const articlesList = useMemo(() => makeArticlesList(articlesDB), [articlesDB])
 
     return (
         <Row>
