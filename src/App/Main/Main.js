@@ -8,8 +8,10 @@ import RecipesPage from './RecipesPage/RecipesPage'
 import RecipePage from './RecipePage/RecipePage'
 import AllRecipesPage from './AllRecipesPage/AllRecipesPage'
 
+import commentsDB from '../commentsDB' 
+
 const Main = () => {
-    const [comments, handleAddComment] = useState({})
+    const [comments, handleAddComment] = useState(commentsDB)
 
     const routesProps = [
         {exact: true, path: "/", component: HomePage},        

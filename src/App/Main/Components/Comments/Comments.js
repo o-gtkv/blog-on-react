@@ -7,13 +7,19 @@ import './Comments.css'
 function addComment(comments, id, commentFormState) {
     if (!comments[id])
         comments[id] = []    
-    comments[id].push(commentFormState)
+    comments[id].push({
+        date: new Date(),
+        name: commentFormState.name,
+        msg: commentFormState.msg,
+    })
+    
     return comments
 }
 
 const Comments = ({className, id, comments, handleAddComment}) => {
+    --id
     const initCommentFormState = {name: '', msg: ''}
-    const [commentFormState, setCommentFormState] = useState(initCommentFormState)
+    const [commentFormState, setCommentFormState] = useState(initCommentFormState)    
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -29,14 +35,14 @@ const Comments = ({className, id, comments, handleAddComment}) => {
         setCommentFormState({...commentFormState, msg: e.target.value})
     }
 
-    const renderCommentsList = () => {
+    const renderCommentsList = () => {        
         if (comments[id]) {
             return (
                 <div className="comments-list">
                     {
                         comments[id].map((comment, i) => (
-                            <div  className="comments-list__item" key={i}>                                
-                                <div className="comments-list__item-from">{`${(new Date()).toDateString()} from ${comment.name}`}</div>
+                            <div  className="comments-list__item" key={i}>
+                                <div className="comments-list__item-from">{`${comment.date.toDateString()} from ${comment.name}`}</div>
                                 <div>{comment.msg}</div>
                             </div>
                         ))

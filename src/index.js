@@ -7,7 +7,6 @@ import App from './App/App';
 import { rootReducer } from './redux/rootReducer'
 
 import './assets/reset.css'
-import './assets/grid.css'
 import './assets/style.css'
 
 const store = createStore(rootReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
