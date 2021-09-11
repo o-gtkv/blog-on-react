@@ -4,13 +4,13 @@ import { Row, Col } from 'react-bootstrap'
 
 import './Comments.css'
 
-function addComment(comments, id, commentFormState) {
+function addComment(comments, id, formState) {
     if (!comments[id])
         comments[id] = []    
     comments[id].push({
         date: new Date(),
-        name: commentFormState.name,
-        msg: commentFormState.msg,
+        name: formState.name,
+        msg: formState.msg,
     })
     
     return comments
@@ -18,21 +18,22 @@ function addComment(comments, id, commentFormState) {
 
 const Comments = ({className, id, comments, handleAddComment}) => {
     --id
-    const initCommentFormState = {name: '', msg: ''}
-    const [commentFormState, setCommentFormState] = useState(initCommentFormState)    
+    const initFormState = {name: '', msg: ''}
+    const [formState, setFormState] = useState(initFormState)    
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        handleAddComment(addComment(comments, id, commentFormState))
-        setCommentFormState(initCommentFormState)
+        handleAddComment(addComment(comments, id, formState))
+        setFormState(initFormState)
     }
 
-    const handleNameChange = (e) => {
-        setCommentFormState({...commentFormState, name: e.target.value})
-    }
-
-    const handleMessageChange = (e) => {
-        setCommentFormState({...commentFormState, msg: e.target.value})
+    const handleChange = (e) => {        
+        setFormState(
+            {             
+                ...formState,
+                [e.target.name]: e.target.value
+            }
+        )
     }
 
     const renderCommentsList = () => {        
@@ -42,7 +43,9 @@ const Comments = ({className, id, comments, handleAddComment}) => {
                     {
                         comments[id].map((comment, i) => (
                             <div  className="comments-list__item" key={i}>
-                                <div className="comments-list__item-from">{`${comment.date.toDateString()} from ${comment.name}`}</div>
+                                <div className="comments-list__item-from">
+                                    {`${comment.date.toDateString()} from ${comment.name}`}
+                                </div>
                                 <div>{comment.msg}</div>
                             </div>
                         ))
@@ -72,8 +75,9 @@ const Comments = ({className, id, comments, handleAddComment}) => {
                         <input 
                             className="form__control" 
                             type="text" 
-                            value={commentFormState.name} 
-                            onChange={handleNameChange} 
+                            name="name"
+                            value={formState.name} 
+                            onChange={handleChange} 
                             placeholder="Your name"                             
                             minLength={3}
                             required={true}
@@ -85,8 +89,9 @@ const Comments = ({className, id, comments, handleAddComment}) => {
                         <textarea 
                             className="form__control" 
                             rows="10" 
-                            value={commentFormState.msg} 
-                            onChange={handleMessageChange} 
+                            name="msg"
+                            value={formState.msg} 
+                            onChange={handleChange} 
                             placeholder="Message"
                             minLength={3}
                             required={true}

@@ -10,8 +10,8 @@ const SearchForm = (props) => {
     }
 
     function handleSubmit(e) {
-        e.preventDefault()
-        setValue('')
+        // e.preventDefault()
+        // setValue('')
         console.log('Not implemented yet.');
     }
 
@@ -20,9 +20,9 @@ const SearchForm = (props) => {
             <input 
                 className="search-form__control" 
                 type="text" 
-                value={value} 
-                placeholder="Enter your search"
                 name="search" 
+                value={value} 
+                placeholder="Enter your search"                
                 onChange={handleChange} 
             />
         </form>
